@@ -22,6 +22,13 @@
 		118058432653A48A00BF4784 /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058422653A48A00BF4784 /* UIViewExtention.swift */; };
 		118058482653A4CD00BF4784 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058472653A4CD00BF4784 /* CALayerExtension.swift */; };
 		1180584D2653A51B00BF4784 /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180584C2653A51B00BF4784 /* UIBezierPathExtension.swift */; };
+		118058532653A5E100BF4784 /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058522653A5E100BF4784 /* SectionViewModel.swift */; };
+		118058582653A5F100BF4784 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058572653A5F100BF4784 /* TableView.swift */; };
+		1180585D2653A60600BF4784 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180585C2653A60600BF4784 /* TableViewDataSource.swift */; };
+		118058622653A61B00BF4784 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058612653A61B00BF4784 /* CellViewModel.swift */; };
+		118058682653A63800BF4784 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058672653A63800BF4784 /* EmptyListView.swift */; };
+		1180586D2653A64A00BF4784 /* EmptyListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1180586C2653A64A00BF4784 /* EmptyListView.xib */; };
+		118058722653A6A700BF4784 /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058712653A6A700BF4784 /* UIColorExtention.swift */; };
 		124EA8DC991FA8D64AFEE985 /* Pods_Space_XTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5594ABA85451330483758A06 /* Pods_Space_XTests.framework */; };
 		577D3A1693383BBECB021E6A /* Pods_Space_X_Space_XUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDA811E27785C37D13FD2C5 /* Pods_Space_X_Space_XUITests.framework */; };
 		7846383061B5B0521463F00A /* Pods_Space_X.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BD45C203C1F366DA62480A /* Pods_Space_X.framework */; };
@@ -69,6 +76,13 @@
 		118058422653A48A00BF4784 /* UIViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
 		118058472653A4CD00BF4784 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		1180584C2653A51B00BF4784 /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPathExtension.swift; sourceTree = "<group>"; };
+		118058522653A5E100BF4784 /* SectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
+		118058572653A5F100BF4784 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		1180585C2653A60600BF4784 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		118058612653A61B00BF4784 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		118058672653A63800BF4784 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
+		1180586C2653A64A00BF4784 /* EmptyListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyListView.xib; sourceTree = "<group>"; };
+		118058712653A6A700BF4784 /* UIColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
 		348C24E3F220926746D3E98B /* Pods-Space-X.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X.debug.xcconfig"; path = "Target Support Files/Pods-Space-X/Pods-Space-X.debug.xcconfig"; sourceTree = "<group>"; };
 		4F945F7466E44EA1717A55AF /* Pods-Space-X-Space-XUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X-Space-XUITests.debug.xcconfig"; path = "Target Support Files/Pods-Space-X-Space-XUITests/Pods-Space-X-Space-XUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5594ABA85451330483758A06 /* Pods_Space_XTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Space_XTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				11794C8126538F1B00B99377 /* AppDelegate.swift */,
+				118058512653A5CF00BF4784 /* DefaultTableView */,
 				118057D6265395C100BF4784 /* Extenstions */,
 			);
 			path = Common;
@@ -241,6 +256,7 @@
 				118058422653A48A00BF4784 /* UIViewExtention.swift */,
 				118058472653A4CD00BF4784 /* CALayerExtension.swift */,
 				1180584C2653A51B00BF4784 /* UIBezierPathExtension.swift */,
+				118058712653A6A700BF4784 /* UIColorExtention.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -250,6 +266,27 @@
 			children = (
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		118058512653A5CF00BF4784 /* DefaultTableView */ = {
+			isa = PBXGroup;
+			children = (
+				118058612653A61B00BF4784 /* CellViewModel.swift */,
+				118058522653A5E100BF4784 /* SectionViewModel.swift */,
+				118058572653A5F100BF4784 /* TableView.swift */,
+				1180585C2653A60600BF4784 /* TableViewDataSource.swift */,
+				118058662653A62C00BF4784 /* EmptyList */,
+			);
+			path = DefaultTableView;
+			sourceTree = "<group>";
+		};
+		118058662653A62C00BF4784 /* EmptyList */ = {
+			isa = PBXGroup;
+			children = (
+				118058672653A63800BF4784 /* EmptyListView.swift */,
+				1180586C2653A64A00BF4784 /* EmptyListView.xib */,
+			);
+			path = EmptyList;
 			sourceTree = "<group>";
 		};
 		4F505BD5570E111A73D60078 /* Pods */ = {
@@ -383,6 +420,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1180586D2653A64A00BF4784 /* EmptyListView.xib in Resources */,
 				11794C8E26538F1C00B99377 /* LaunchScreen.storyboard in Resources */,
 				1135B7F0265393F7009ED1D3 /* Colors.xcassets in Resources */,
 				1120FB4B2653935800147F41 /* Assets.xcassets in Resources */,
@@ -514,15 +552,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				118057F42653983300BF4784 /* NibLoadableView.swift in Sources */,
+				118058582653A5F100BF4784 /* TableView.swift in Sources */,
 				118058312653A34300BF4784 /* UIImageViewExtension.swift in Sources */,
 				118057F92653986800BF4784 /* UIViewControllerExtention.swift in Sources */,
 				118057EA2653981000BF4784 /* JSONDecoderExtension.swift in Sources */,
 				118057EF2653981F00BF4784 /* JSONEncoderExtension.swift in Sources */,
 				118057FE265398A400BF4784 /* UIAlertController.swift in Sources */,
+				118058532653A5E100BF4784 /* SectionViewModel.swift in Sources */,
 				118058482653A4CD00BF4784 /* CALayerExtension.swift in Sources */,
 				1180584D2653A51B00BF4784 /* UIBezierPathExtension.swift in Sources */,
+				118058622653A61B00BF4784 /* CellViewModel.swift in Sources */,
+				1180585D2653A60600BF4784 /* TableViewDataSource.swift in Sources */,
+				118058722653A6A700BF4784 /* UIColorExtention.swift in Sources */,
 				11794C8226538F1B00B99377 /* AppDelegate.swift in Sources */,
 				118058432653A48A00BF4784 /* UIViewExtention.swift in Sources */,
+				118058682653A63800BF4784 /* EmptyListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
