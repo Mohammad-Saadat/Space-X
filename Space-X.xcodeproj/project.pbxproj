@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		1120FB4B2653935800147F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1120FB4A2653935800147F41 /* Assets.xcassets */; };
 		1135B7F0265393F7009ED1D3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1135B7EF265393F7009ED1D3 /* Colors.xcassets */; };
+		116231232653EA2A009D91DF /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116231172653EA2A009D91DF /* HomeRouter.swift */; };
+		116231242653EA2A009D91DF /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116231182653EA2A009D91DF /* HomeWorker.swift */; };
+		116231252653EA2A009D91DF /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116231192653EA2A009D91DF /* HomeFactory.swift */; };
+		116231262653EA2A009D91DF /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162311A2653EA2A009D91DF /* HomeModels.swift */; };
+		116231272653EA2A009D91DF /* HomeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162311B2653EA2A009D91DF /* HomeEndpoint.swift */; };
+		116231282653EA2A009D91DF /* HomeDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162311C2653EA2A009D91DF /* HomeDependencyContainer.swift */; };
+		116231292653EA2A009D91DF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1162311D2653EA2A009D91DF /* HomeViewController.xib */; };
+		1162312A2653EA2A009D91DF /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162311E2653EA2A009D91DF /* HomePresenter.swift */; };
+		1162312B2653EA2A009D91DF /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162311F2653EA2A009D91DF /* HomeService.swift */; };
+		1162312C2653EA2A009D91DF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116231202653EA2A009D91DF /* HomeViewController.swift */; };
+		1162312D2653EA2A009D91DF /* HomeLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116231212653EA2A009D91DF /* HomeLogger.swift */; };
+		1162312E2653EA2A009D91DF /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116231222653EA2A009D91DF /* HomeInteractor.swift */; };
 		11794C8226538F1B00B99377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11794C8126538F1B00B99377 /* AppDelegate.swift */; };
 		11794C8E26538F1C00B99377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11794C8C26538F1C00B99377 /* LaunchScreen.storyboard */; };
 		11794C9926538F1D00B99377 /* Space_XTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11794C9826538F1D00B99377 /* Space_XTests.swift */; };
@@ -94,6 +106,18 @@
 /* Begin PBXFileReference section */
 		1120FB4A2653935800147F41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1135B7EF265393F7009ED1D3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		116231172653EA2A009D91DF /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		116231182653EA2A009D91DF /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		116231192653EA2A009D91DF /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
+		1162311A2653EA2A009D91DF /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		1162311B2653EA2A009D91DF /* HomeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndpoint.swift; sourceTree = "<group>"; };
+		1162311C2653EA2A009D91DF /* HomeDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDependencyContainer.swift; sourceTree = "<group>"; };
+		1162311D2653EA2A009D91DF /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		1162311E2653EA2A009D91DF /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		1162311F2653EA2A009D91DF /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		116231202653EA2A009D91DF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		116231212653EA2A009D91DF /* HomeLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLogger.swift; sourceTree = "<group>"; };
+		116231222653EA2A009D91DF /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		11794C7E26538F1B00B99377 /* Space-X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space-X.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11794C8126538F1B00B99377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11794C8D26538F1C00B99377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -202,6 +226,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		116231162653EA1D009D91DF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				116231222653EA2A009D91DF /* HomeInteractor.swift */,
+				116231212653EA2A009D91DF /* HomeLogger.swift */,
+				1162311A2653EA2A009D91DF /* HomeModels.swift */,
+				1162311E2653EA2A009D91DF /* HomePresenter.swift */,
+				116231172653EA2A009D91DF /* HomeRouter.swift */,
+				1188910E2653F03A00F5BCA0 /* DependencyContainer */,
+				118891122653F05200F5BCA0 /* Service */,
+				1188910A2653F02F00F5BCA0 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		11794C7526538F1B00B99377 = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +309,7 @@
 		11794CB826538F5D00B99377 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				116231162653EA1D009D91DF /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -545,6 +585,34 @@
 			path = DependencyContainer;
 			sourceTree = "<group>";
 		};
+		1188910A2653F02F00F5BCA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1162311D2653EA2A009D91DF /* HomeViewController.xib */,
+				116231202653EA2A009D91DF /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1188910E2653F03A00F5BCA0 /* DependencyContainer */ = {
+			isa = PBXGroup;
+			children = (
+				116231192653EA2A009D91DF /* HomeFactory.swift */,
+				1162311C2653EA2A009D91DF /* HomeDependencyContainer.swift */,
+			);
+			path = DependencyContainer;
+			sourceTree = "<group>";
+		};
+		118891122653F05200F5BCA0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1162311B2653EA2A009D91DF /* HomeEndpoint.swift */,
+				1162311F2653EA2A009D91DF /* HomeService.swift */,
+				116231182653EA2A009D91DF /* HomeWorker.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		4F505BD5570E111A73D60078 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -681,6 +749,7 @@
 				1135B7F0265393F7009ED1D3 /* Colors.xcassets in Resources */,
 				118058BC2653A8AD00BF4784 /* ForceUpdateViewController.xib in Resources */,
 				1120FB4B2653935800147F41 /* Assets.xcassets in Resources */,
+				116231292653EA2A009D91DF /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,6 +880,7 @@
 				118057F42653983300BF4784 /* NibLoadableView.swift in Sources */,
 				118058C12653A8AD00BF4784 /* GeneralErrors.swift in Sources */,
 				118058C82653A8AE00BF4784 /* Connectivity.swift in Sources */,
+				1162312A2653EA2A009D91DF /* HomePresenter.swift in Sources */,
 				118058CD2653A8AE00BF4784 /* GeneralErrorHandlerPlugin.swift in Sources */,
 				118058582653A5F100BF4784 /* TableView.swift in Sources */,
 				118059032653B96200BF4784 /* RTAChangeRootSegue.swift in Sources */,
@@ -819,6 +889,7 @@
 				118058CC2653A8AE00BF4784 /* NetworkLoggerPlugin.swift in Sources */,
 				118058CE2653A8AE00BF4784 /* CustomUrlEncoding.swift in Sources */,
 				118058312653A34300BF4784 /* UIImageViewExtension.swift in Sources */,
+				116231272653EA2A009D91DF /* HomeEndpoint.swift in Sources */,
 				118057F92653986800BF4784 /* UIViewControllerExtention.swift in Sources */,
 				118058892653A7D400BF4784 /* NetworkStateNotifier.swift in Sources */,
 				118058CA2653A8AE00BF4784 /* NetworkActivityPlugin.swift in Sources */,
@@ -832,7 +903,9 @@
 				118058C32653A8AD00BF4784 /* AppInfoProvider.swift in Sources */,
 				118058C62653A8AD00BF4784 /* RequestProtocol.swift in Sources */,
 				118058C92653A8AE00BF4784 /* CustomMoyaProvider.swift in Sources */,
+				116231282653EA2A009D91DF /* HomeDependencyContainer.swift in Sources */,
 				1180588E2653A7E300BF4784 /* NetworkNotifierProtocol.swift in Sources */,
+				1162312D2653EA2A009D91DF /* HomeLogger.swift in Sources */,
 				1180591B2653BB4900BF4784 /* InfoDictionary.swift in Sources */,
 				118058C72653A8AD00BF4784 /* TokenProvider.swift in Sources */,
 				118058842653A7C400BF4784 /* NetStatus.swift in Sources */,
@@ -845,12 +918,18 @@
 				1180584D2653A51B00BF4784 /* UIBezierPathExtension.swift in Sources */,
 				118058622653A61B00BF4784 /* CellViewModel.swift in Sources */,
 				118059002653B96200BF4784 /* RTAChangeRootProtocol.swift in Sources */,
+				116231242653EA2A009D91DF /* HomeWorker.swift in Sources */,
+				116231232653EA2A009D91DF /* HomeRouter.swift in Sources */,
+				1162312B2653EA2A009D91DF /* HomeService.swift in Sources */,
 				118058FF2653B96200BF4784 /* UIWindow+ChangeRoot.swift in Sources */,
+				1162312E2653EA2A009D91DF /* HomeInteractor.swift in Sources */,
 				1180585D2653A60600BF4784 /* TableViewDataSource.swift in Sources */,
 				118058C52653A8AD00BF4784 /* NetworkManager.swift in Sources */,
 				118058C22653A8AD00BF4784 /* NetworkErrors.swift in Sources */,
 				118058722653A6A700BF4784 /* UIColorExtention.swift in Sources */,
 				11794C8226538F1B00B99377 /* AppDelegate.swift in Sources */,
+				116231252653EA2A009D91DF /* HomeFactory.swift in Sources */,
+				116231262653EA2A009D91DF /* HomeModels.swift in Sources */,
 				118058BE2653A8AD00BF4784 /* ForceUpdateErrorHandler.swift in Sources */,
 				118058942653A82D00BF4784 /* SpaceXNetworkFactory.swift in Sources */,
 				118058432653A48A00BF4784 /* UIViewExtention.swift in Sources */,
@@ -859,6 +938,7 @@
 				118058BF2653A8AD00BF4784 /* ForceUpdateRouter.swift in Sources */,
 				1180587C2653A73C00BF4784 /* AlamofireNetworkReachabilityManager.swift in Sources */,
 				118058D02653A8AE00BF4784 /* MoyaService.swift in Sources */,
+				1162312C2653EA2A009D91DF /* HomeViewController.swift in Sources */,
 				118058682653A63800BF4784 /* EmptyListView.swift in Sources */,
 				118058C42653A8AD00BF4784 /* NetworkManagerProtocol.swift in Sources */,
 				118058CF2653A8AE00BF4784 /* MoyaTarget.swift in Sources */,
