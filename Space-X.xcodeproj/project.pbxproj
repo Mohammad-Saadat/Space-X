@@ -29,6 +29,44 @@
 		118058682653A63800BF4784 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058672653A63800BF4784 /* EmptyListView.swift */; };
 		1180586D2653A64A00BF4784 /* EmptyListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1180586C2653A64A00BF4784 /* EmptyListView.xib */; };
 		118058722653A6A700BF4784 /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058712653A6A700BF4784 /* UIColorExtention.swift */; };
+		1180587C2653A73C00BF4784 /* AlamofireNetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180587B2653A73C00BF4784 /* AlamofireNetworkReachabilityManager.swift */; };
+		118058842653A7C400BF4784 /* NetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058832653A7C400BF4784 /* NetStatus.swift */; };
+		118058892653A7D400BF4784 /* NetworkStateNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058882653A7D400BF4784 /* NetworkStateNotifier.swift */; };
+		1180588E2653A7E300BF4784 /* NetworkNotifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180588D2653A7E300BF4784 /* NetworkNotifierProtocol.swift */; };
+		118058942653A82D00BF4784 /* SpaceXNetworkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058932653A82C00BF4784 /* SpaceXNetworkFactory.swift */; };
+		118058BB2653A8AD00BF4784 /* ErrorHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058A02653A8AD00BF4784 /* ErrorHandlerProtocol.swift */; };
+		118058BC2653A8AD00BF4784 /* ForceUpdateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118058A32653A8AD00BF4784 /* ForceUpdateViewController.xib */; };
+		118058BD2653A8AD00BF4784 /* ForceUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058A42653A8AD00BF4784 /* ForceUpdateViewController.swift */; };
+		118058BE2653A8AD00BF4784 /* ForceUpdateErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058A52653A8AD00BF4784 /* ForceUpdateErrorHandler.swift */; };
+		118058BF2653A8AD00BF4784 /* ForceUpdateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058A62653A8AD00BF4784 /* ForceUpdateRouter.swift */; };
+		118058C02653A8AD00BF4784 /* UnAuthorizedErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058A72653A8AD00BF4784 /* UnAuthorizedErrorHandler.swift */; };
+		118058C12653A8AD00BF4784 /* GeneralErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058A82653A8AD00BF4784 /* GeneralErrors.swift */; };
+		118058C22653A8AD00BF4784 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058A92653A8AD00BF4784 /* NetworkErrors.swift */; };
+		118058C32653A8AD00BF4784 /* AppInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058AB2653A8AD00BF4784 /* AppInfoProvider.swift */; };
+		118058C42653A8AD00BF4784 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058AC2653A8AD00BF4784 /* NetworkManagerProtocol.swift */; };
+		118058C52653A8AD00BF4784 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058AD2653A8AD00BF4784 /* NetworkManager.swift */; };
+		118058C62653A8AD00BF4784 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058AE2653A8AD00BF4784 /* RequestProtocol.swift */; };
+		118058C72653A8AD00BF4784 /* TokenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058AF2653A8AD00BF4784 /* TokenProvider.swift */; };
+		118058C82653A8AE00BF4784 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058B12653A8AD00BF4784 /* Connectivity.swift */; };
+		118058C92653A8AE00BF4784 /* CustomMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058B22653A8AD00BF4784 /* CustomMoyaProvider.swift */; };
+		118058CA2653A8AE00BF4784 /* NetworkActivityPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058B42653A8AD00BF4784 /* NetworkActivityPlugin.swift */; };
+		118058CB2653A8AE00BF4784 /* AppInfoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058B52653A8AD00BF4784 /* AppInfoPlugin.swift */; };
+		118058CC2653A8AE00BF4784 /* NetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058B62653A8AD00BF4784 /* NetworkLoggerPlugin.swift */; };
+		118058CD2653A8AE00BF4784 /* GeneralErrorHandlerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058B72653A8AD00BF4784 /* GeneralErrorHandlerPlugin.swift */; };
+		118058CE2653A8AE00BF4784 /* CustomUrlEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058B82653A8AD00BF4784 /* CustomUrlEncoding.swift */; };
+		118058CF2653A8AE00BF4784 /* MoyaTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058B92653A8AD00BF4784 /* MoyaTarget.swift */; };
+		118058D02653A8AE00BF4784 /* MoyaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058BA2653A8AD00BF4784 /* MoyaService.swift */; };
+		118058D82653AAE500BF4784 /* BackendError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058D72653AAE500BF4784 /* BackendError.swift */; };
+		118058DD2653AB7300BF4784 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058DC2653AB7300BF4784 /* DataExtension.swift */; };
+		118058E32653AC2A00BF4784 /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058E22653AC2A00BF4784 /* WindowManager.swift */; };
+		118058E82653AC7500BF4784 /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058E72653AC7500BF4784 /* StringExtention.swift */; };
+		118058EE2653ACF600BF4784 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058ED2653ACF600BF4784 /* CustomNavigationController.swift */; };
+		118058FF2653B96200BF4784 /* UIWindow+ChangeRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058FA2653B96200BF4784 /* UIWindow+ChangeRoot.swift */; };
+		118059002653B96200BF4784 /* RTAChangeRootProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058FB2653B96200BF4784 /* RTAChangeRootProtocol.swift */; };
+		118059012653B96200BF4784 /* RTAChangeRootTransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058FC2653B96200BF4784 /* RTAChangeRootTransitionStyle.swift */; };
+		118059022653B96200BF4784 /* RTAChangeRootProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058FD2653B96200BF4784 /* RTAChangeRootProtocolExtension.swift */; };
+		118059032653B96200BF4784 /* RTAChangeRootSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058FE2653B96200BF4784 /* RTAChangeRootSegue.swift */; };
+		1180591B2653BB4900BF4784 /* InfoDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180591A2653BB4900BF4784 /* InfoDictionary.swift */; };
 		124EA8DC991FA8D64AFEE985 /* Pods_Space_XTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5594ABA85451330483758A06 /* Pods_Space_XTests.framework */; };
 		577D3A1693383BBECB021E6A /* Pods_Space_X_Space_XUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDA811E27785C37D13FD2C5 /* Pods_Space_X_Space_XUITests.framework */; };
 		7846383061B5B0521463F00A /* Pods_Space_X.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BD45C203C1F366DA62480A /* Pods_Space_X.framework */; };
@@ -83,6 +121,44 @@
 		118058672653A63800BF4784 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
 		1180586C2653A64A00BF4784 /* EmptyListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyListView.xib; sourceTree = "<group>"; };
 		118058712653A6A700BF4784 /* UIColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
+		1180587B2653A73C00BF4784 /* AlamofireNetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		118058832653A7C400BF4784 /* NetStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetStatus.swift; sourceTree = "<group>"; };
+		118058882653A7D400BF4784 /* NetworkStateNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStateNotifier.swift; sourceTree = "<group>"; };
+		1180588D2653A7E300BF4784 /* NetworkNotifierProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkNotifierProtocol.swift; sourceTree = "<group>"; };
+		118058932653A82C00BF4784 /* SpaceXNetworkFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXNetworkFactory.swift; sourceTree = "<group>"; };
+		118058A02653A8AD00BF4784 /* ErrorHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandlerProtocol.swift; sourceTree = "<group>"; };
+		118058A32653A8AD00BF4784 /* ForceUpdateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForceUpdateViewController.xib; sourceTree = "<group>"; };
+		118058A42653A8AD00BF4784 /* ForceUpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceUpdateViewController.swift; sourceTree = "<group>"; };
+		118058A52653A8AD00BF4784 /* ForceUpdateErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceUpdateErrorHandler.swift; sourceTree = "<group>"; };
+		118058A62653A8AD00BF4784 /* ForceUpdateRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceUpdateRouter.swift; sourceTree = "<group>"; };
+		118058A72653A8AD00BF4784 /* UnAuthorizedErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnAuthorizedErrorHandler.swift; sourceTree = "<group>"; };
+		118058A82653A8AD00BF4784 /* GeneralErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralErrors.swift; sourceTree = "<group>"; };
+		118058A92653A8AD00BF4784 /* NetworkErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		118058AB2653A8AD00BF4784 /* AppInfoProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoProvider.swift; sourceTree = "<group>"; };
+		118058AC2653A8AD00BF4784 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		118058AD2653A8AD00BF4784 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		118058AE2653A8AD00BF4784 /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		118058AF2653A8AD00BF4784 /* TokenProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenProvider.swift; sourceTree = "<group>"; };
+		118058B12653A8AD00BF4784 /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		118058B22653A8AD00BF4784 /* CustomMoyaProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMoyaProvider.swift; sourceTree = "<group>"; };
+		118058B42653A8AD00BF4784 /* NetworkActivityPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkActivityPlugin.swift; sourceTree = "<group>"; };
+		118058B52653A8AD00BF4784 /* AppInfoPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoPlugin.swift; sourceTree = "<group>"; };
+		118058B62653A8AD00BF4784 /* NetworkLoggerPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLoggerPlugin.swift; sourceTree = "<group>"; };
+		118058B72653A8AD00BF4784 /* GeneralErrorHandlerPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralErrorHandlerPlugin.swift; sourceTree = "<group>"; };
+		118058B82653A8AD00BF4784 /* CustomUrlEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUrlEncoding.swift; sourceTree = "<group>"; };
+		118058B92653A8AD00BF4784 /* MoyaTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaTarget.swift; sourceTree = "<group>"; };
+		118058BA2653A8AD00BF4784 /* MoyaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaService.swift; sourceTree = "<group>"; };
+		118058D72653AAE500BF4784 /* BackendError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendError.swift; sourceTree = "<group>"; };
+		118058DC2653AB7300BF4784 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		118058E22653AC2A00BF4784 /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
+		118058E72653AC7500BF4784 /* StringExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtention.swift; sourceTree = "<group>"; };
+		118058ED2653ACF600BF4784 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		118058FA2653B96200BF4784 /* UIWindow+ChangeRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+ChangeRoot.swift"; sourceTree = "<group>"; };
+		118058FB2653B96200BF4784 /* RTAChangeRootProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTAChangeRootProtocol.swift; sourceTree = "<group>"; };
+		118058FC2653B96200BF4784 /* RTAChangeRootTransitionStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTAChangeRootTransitionStyle.swift; sourceTree = "<group>"; };
+		118058FD2653B96200BF4784 /* RTAChangeRootProtocolExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTAChangeRootProtocolExtension.swift; sourceTree = "<group>"; };
+		118058FE2653B96200BF4784 /* RTAChangeRootSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTAChangeRootSegue.swift; sourceTree = "<group>"; };
+		1180591A2653BB4900BF4784 /* InfoDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDictionary.swift; sourceTree = "<group>"; };
 		348C24E3F220926746D3E98B /* Pods-Space-X.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X.debug.xcconfig"; path = "Target Support Files/Pods-Space-X/Pods-Space-X.debug.xcconfig"; sourceTree = "<group>"; };
 		4F945F7466E44EA1717A55AF /* Pods-Space-X-Space-XUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X-Space-XUITests.debug.xcconfig"; path = "Target Support Files/Pods-Space-X-Space-XUITests/Pods-Space-X-Space-XUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5594ABA85451330483758A06 /* Pods_Space_XTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Space_XTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,9 +251,12 @@
 		11794CB726538F5600B99377 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				118059192653BB4000BF4784 /* Helper */,
 				11794C8126538F1B00B99377 /* AppDelegate.swift */,
-				118058512653A5CF00BF4784 /* DefaultTableView */,
+				118058EC2653ACE700BF4784 /* CustomClasses */,
 				118057D6265395C100BF4784 /* Extenstions */,
+				118058792653A70F00BF4784 /* Remote */,
+				118058E12653AC1F00BF4784 /* WindowManager */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -231,19 +310,9 @@
 			isa = PBXGroup;
 			children = (
 				1180581326539ACA00BF4784 /* Foundation */,
-				118057D7265395D000BF4784 /* Swift */,
 				118057D8265395D600BF4784 /* UIKit */,
 			);
 			path = Extenstions;
-			sourceTree = "<group>";
-		};
-		118057D7265395D000BF4784 /* Swift */ = {
-			isa = PBXGroup;
-			children = (
-				118057E92653981000BF4784 /* JSONDecoderExtension.swift */,
-				118057EE2653981F00BF4784 /* JSONEncoderExtension.swift */,
-			);
-			path = Swift;
 			sourceTree = "<group>";
 		};
 		118057D8265395D600BF4784 /* UIKit */ = {
@@ -264,11 +333,15 @@
 		1180581326539ACA00BF4784 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				118057E92653981000BF4784 /* JSONDecoderExtension.swift */,
+				118057EE2653981F00BF4784 /* JSONEncoderExtension.swift */,
+				118058DC2653AB7300BF4784 /* DataExtension.swift */,
+				118058E72653AC7500BF4784 /* StringExtention.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
 		};
-		118058512653A5CF00BF4784 /* DefaultTableView */ = {
+		118058512653A5CF00BF4784 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
 				118058612653A61B00BF4784 /* CellViewModel.swift */,
@@ -277,7 +350,7 @@
 				1180585C2653A60600BF4784 /* TableViewDataSource.swift */,
 				118058662653A62C00BF4784 /* EmptyList */,
 			);
-			path = DefaultTableView;
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		118058662653A62C00BF4784 /* EmptyList */ = {
@@ -287,6 +360,167 @@
 				1180586C2653A64A00BF4784 /* EmptyListView.xib */,
 			);
 			path = EmptyList;
+			sourceTree = "<group>";
+		};
+		118058792653A70F00BF4784 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				1180589B2653A87800BF4784 /* NetworkLayer */,
+				118058922653A80F00BF4784 /* SpaceXNetwork */,
+				1180587A2653A73200BF4784 /* NetworkNotifier */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		1180587A2653A73200BF4784 /* NetworkNotifier */ = {
+			isa = PBXGroup;
+			children = (
+				1180587B2653A73C00BF4784 /* AlamofireNetworkReachabilityManager.swift */,
+				118058832653A7C400BF4784 /* NetStatus.swift */,
+				118058882653A7D400BF4784 /* NetworkStateNotifier.swift */,
+				1180588D2653A7E300BF4784 /* NetworkNotifierProtocol.swift */,
+			);
+			path = NetworkNotifier;
+			sourceTree = "<group>";
+		};
+		118058922653A80F00BF4784 /* SpaceXNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				118058932653A82C00BF4784 /* SpaceXNetworkFactory.swift */,
+			);
+			path = SpaceXNetwork;
+			sourceTree = "<group>";
+		};
+		1180589B2653A87800BF4784 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				1180589E2653A8AD00BF4784 /* Errors */,
+				118058B02653A8AD00BF4784 /* Moya */,
+				118058AA2653A8AD00BF4784 /* NetworkManager */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		1180589E2653A8AD00BF4784 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				1180589F2653A8AD00BF4784 /* Handlers */,
+				118058A82653A8AD00BF4784 /* GeneralErrors.swift */,
+				118058A92653A8AD00BF4784 /* NetworkErrors.swift */,
+				118058D72653AAE500BF4784 /* BackendError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		1180589F2653A8AD00BF4784 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				118058A02653A8AD00BF4784 /* ErrorHandlerProtocol.swift */,
+				118058A72653A8AD00BF4784 /* UnAuthorizedErrorHandler.swift */,
+				118058A12653A8AD00BF4784 /* ForceUpdateHandler */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		118058A12653A8AD00BF4784 /* ForceUpdateHandler */ = {
+			isa = PBXGroup;
+			children = (
+				118058A22653A8AD00BF4784 /* ViewController */,
+				118058A52653A8AD00BF4784 /* ForceUpdateErrorHandler.swift */,
+				118058A62653A8AD00BF4784 /* ForceUpdateRouter.swift */,
+			);
+			path = ForceUpdateHandler;
+			sourceTree = "<group>";
+		};
+		118058A22653A8AD00BF4784 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				118058A32653A8AD00BF4784 /* ForceUpdateViewController.xib */,
+				118058A42653A8AD00BF4784 /* ForceUpdateViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		118058AA2653A8AD00BF4784 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				118058AB2653A8AD00BF4784 /* AppInfoProvider.swift */,
+				118058AC2653A8AD00BF4784 /* NetworkManagerProtocol.swift */,
+				118058AD2653A8AD00BF4784 /* NetworkManager.swift */,
+				118058AE2653A8AD00BF4784 /* RequestProtocol.swift */,
+				118058AF2653A8AD00BF4784 /* TokenProvider.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		118058B02653A8AD00BF4784 /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				118058B12653A8AD00BF4784 /* Connectivity.swift */,
+				118058B22653A8AD00BF4784 /* CustomMoyaProvider.swift */,
+				118058B82653A8AD00BF4784 /* CustomUrlEncoding.swift */,
+				118058BA2653A8AD00BF4784 /* MoyaService.swift */,
+				118058B92653A8AD00BF4784 /* MoyaTarget.swift */,
+				118058B32653A8AD00BF4784 /* Plugins */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
+		118058B32653A8AD00BF4784 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				118058B42653A8AD00BF4784 /* NetworkActivityPlugin.swift */,
+				118058B52653A8AD00BF4784 /* AppInfoPlugin.swift */,
+				118058B62653A8AD00BF4784 /* NetworkLoggerPlugin.swift */,
+				118058B72653A8AD00BF4784 /* GeneralErrorHandlerPlugin.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		118058E12653AC1F00BF4784 /* WindowManager */ = {
+			isa = PBXGroup;
+			children = (
+				118058F92653B96200BF4784 /* Component */,
+				118058E22653AC2A00BF4784 /* WindowManager.swift */,
+			);
+			path = WindowManager;
+			sourceTree = "<group>";
+		};
+		118058EC2653ACE700BF4784 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				118058F52653AD0600BF4784 /* NavigationController */,
+				118058512653A5CF00BF4784 /* TableView */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		118058F52653AD0600BF4784 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				118058ED2653ACF600BF4784 /* CustomNavigationController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		118058F92653B96200BF4784 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				118058FA2653B96200BF4784 /* UIWindow+ChangeRoot.swift */,
+				118058FB2653B96200BF4784 /* RTAChangeRootProtocol.swift */,
+				118058FC2653B96200BF4784 /* RTAChangeRootTransitionStyle.swift */,
+				118058FD2653B96200BF4784 /* RTAChangeRootProtocolExtension.swift */,
+				118058FE2653B96200BF4784 /* RTAChangeRootSegue.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		118059192653BB4000BF4784 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1180591A2653BB4900BF4784 /* InfoDictionary.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		4F505BD5570E111A73D60078 /* Pods */ = {
@@ -423,6 +657,7 @@
 				1180586D2653A64A00BF4784 /* EmptyListView.xib in Resources */,
 				11794C8E26538F1C00B99377 /* LaunchScreen.storyboard in Resources */,
 				1135B7F0265393F7009ED1D3 /* Colors.xcassets in Resources */,
+				118058BC2653A8AD00BF4784 /* ForceUpdateViewController.xib in Resources */,
 				1120FB4B2653935800147F41 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,21 +787,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				118057F42653983300BF4784 /* NibLoadableView.swift in Sources */,
+				118058C12653A8AD00BF4784 /* GeneralErrors.swift in Sources */,
+				118058C82653A8AE00BF4784 /* Connectivity.swift in Sources */,
+				118058CD2653A8AE00BF4784 /* GeneralErrorHandlerPlugin.swift in Sources */,
 				118058582653A5F100BF4784 /* TableView.swift in Sources */,
+				118059032653B96200BF4784 /* RTAChangeRootSegue.swift in Sources */,
+				118058BD2653A8AD00BF4784 /* ForceUpdateViewController.swift in Sources */,
+				118058EE2653ACF600BF4784 /* CustomNavigationController.swift in Sources */,
+				118058CC2653A8AE00BF4784 /* NetworkLoggerPlugin.swift in Sources */,
+				118058CE2653A8AE00BF4784 /* CustomUrlEncoding.swift in Sources */,
 				118058312653A34300BF4784 /* UIImageViewExtension.swift in Sources */,
 				118057F92653986800BF4784 /* UIViewControllerExtention.swift in Sources */,
+				118058892653A7D400BF4784 /* NetworkStateNotifier.swift in Sources */,
+				118058CA2653A8AE00BF4784 /* NetworkActivityPlugin.swift in Sources */,
 				118057EA2653981000BF4784 /* JSONDecoderExtension.swift in Sources */,
+				118058CB2653A8AE00BF4784 /* AppInfoPlugin.swift in Sources */,
+				118058E32653AC2A00BF4784 /* WindowManager.swift in Sources */,
+				118059012653B96200BF4784 /* RTAChangeRootTransitionStyle.swift in Sources */,
 				118057EF2653981F00BF4784 /* JSONEncoderExtension.swift in Sources */,
 				118057FE265398A400BF4784 /* UIAlertController.swift in Sources */,
+				118058C32653A8AD00BF4784 /* AppInfoProvider.swift in Sources */,
+				118058C62653A8AD00BF4784 /* RequestProtocol.swift in Sources */,
+				118058C92653A8AE00BF4784 /* CustomMoyaProvider.swift in Sources */,
+				1180588E2653A7E300BF4784 /* NetworkNotifierProtocol.swift in Sources */,
+				1180591B2653BB4900BF4784 /* InfoDictionary.swift in Sources */,
+				118058C72653A8AD00BF4784 /* TokenProvider.swift in Sources */,
+				118058842653A7C400BF4784 /* NetStatus.swift in Sources */,
 				118058532653A5E100BF4784 /* SectionViewModel.swift in Sources */,
 				118058482653A4CD00BF4784 /* CALayerExtension.swift in Sources */,
+				118058D82653AAE500BF4784 /* BackendError.swift in Sources */,
+				118058DD2653AB7300BF4784 /* DataExtension.swift in Sources */,
+				118058E82653AC7500BF4784 /* StringExtention.swift in Sources */,
 				1180584D2653A51B00BF4784 /* UIBezierPathExtension.swift in Sources */,
 				118058622653A61B00BF4784 /* CellViewModel.swift in Sources */,
+				118059002653B96200BF4784 /* RTAChangeRootProtocol.swift in Sources */,
+				118058FF2653B96200BF4784 /* UIWindow+ChangeRoot.swift in Sources */,
 				1180585D2653A60600BF4784 /* TableViewDataSource.swift in Sources */,
+				118058C52653A8AD00BF4784 /* NetworkManager.swift in Sources */,
+				118058C22653A8AD00BF4784 /* NetworkErrors.swift in Sources */,
 				118058722653A6A700BF4784 /* UIColorExtention.swift in Sources */,
 				11794C8226538F1B00B99377 /* AppDelegate.swift in Sources */,
+				118058BE2653A8AD00BF4784 /* ForceUpdateErrorHandler.swift in Sources */,
+				118058942653A82D00BF4784 /* SpaceXNetworkFactory.swift in Sources */,
 				118058432653A48A00BF4784 /* UIViewExtention.swift in Sources */,
+				118058BB2653A8AD00BF4784 /* ErrorHandlerProtocol.swift in Sources */,
+				118059022653B96200BF4784 /* RTAChangeRootProtocolExtension.swift in Sources */,
+				118058BF2653A8AD00BF4784 /* ForceUpdateRouter.swift in Sources */,
+				1180587C2653A73C00BF4784 /* AlamofireNetworkReachabilityManager.swift in Sources */,
+				118058D02653A8AE00BF4784 /* MoyaService.swift in Sources */,
 				118058682653A63800BF4784 /* EmptyListView.swift in Sources */,
+				118058C42653A8AD00BF4784 /* NetworkManagerProtocol.swift in Sources */,
+				118058CF2653A8AE00BF4784 /* MoyaTarget.swift in Sources */,
+				118058C02653A8AD00BF4784 /* UnAuthorizedErrorHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

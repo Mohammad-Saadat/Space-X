@@ -41,6 +41,4 @@ class DefaultCellViewModel: CellViewModel {
     }
 }
 
-class DefaultCollectionTableCellViewModel {
-    
-}
+class DefaultCollectionTableCellViewModel {}
