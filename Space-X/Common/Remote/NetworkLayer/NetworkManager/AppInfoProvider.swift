@@ -2,10 +2,8 @@
 //  AppInfoProvider.swift
 //  SHFTHeroV2
 //
-//  Created by Mahsa on 5/20/20.
-//  Copyright © 2020 RoundTableApps. All rights reserved.
+//  Created by mohammad on 5/18/21.
 //
-
 import Foundation
 
 protocol AppInfoProviderProtocol {

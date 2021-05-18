@@ -2,8 +2,7 @@
 //  ForceUpdateRouter.swift
 //  TRB
 //
-//  Created by Farzad on 11/14/20.
-//  Copyright (c) 2020 RoundTableApps. All rights reserved.
+//  Created by mohammad on 5/18/21.
 //
 
 import UIKit

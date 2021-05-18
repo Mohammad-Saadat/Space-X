@@ -2,8 +2,7 @@
 //  GeneralErrorHandlerPlugin.swift
 //  MockFlash
 //
-//  Created by Ali Motevali on 2/26/20.
-//  Copyright © 2020 RoundTableApps. All rights reserved.
+//  Created by mohammad on 5/18/21.
 //
 
 import Foundation

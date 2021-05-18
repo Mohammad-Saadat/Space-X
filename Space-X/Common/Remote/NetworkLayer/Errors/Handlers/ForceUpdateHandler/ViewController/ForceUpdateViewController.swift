@@ -2,8 +2,7 @@
 //  ForceUpdateViewController.swift
 //  Mercury
 //
-//  Created by Mahsa on 1/8/20.
-//  Copyright © 2020 RTA. All rights reserved.
+//  Created by mohammad on 5/18/21.
 //
 
 import UIKit

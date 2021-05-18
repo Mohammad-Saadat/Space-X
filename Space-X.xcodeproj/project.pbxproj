@@ -251,10 +251,10 @@
 		11794CB726538F5600B99377 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				118059192653BB4000BF4784 /* Helper */,
 				11794C8126538F1B00B99377 /* AppDelegate.swift */,
 				118058EC2653ACE700BF4784 /* CustomClasses */,
 				118057D6265395C100BF4784 /* Extenstions */,
+				118059192653BB4000BF4784 /* Helper */,
 				118058792653A70F00BF4784 /* Remote */,
 				118058E12653AC1F00BF4784 /* WindowManager */,
 			);
@@ -480,8 +480,8 @@
 		118058E12653AC1F00BF4784 /* WindowManager */ = {
 			isa = PBXGroup;
 			children = (
-				118058F92653B96200BF4784 /* Component */,
 				118058E22653AC2A00BF4784 /* WindowManager.swift */,
+				118058F92653B96200BF4784 /* Component */,
 			);
 			path = WindowManager;
 			sourceTree = "<group>";

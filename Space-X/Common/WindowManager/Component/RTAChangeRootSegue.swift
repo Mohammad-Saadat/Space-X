@@ -2,9 +2,9 @@
 //  RTAChangeRootSegue.swift
 //  RTACore
 //
-//  Created by Mohammad Ali Jafarian on 3/2/18.
-//  Copyright © 2018 Behzad Ardehei. All rights reserved.
+//  Created by mohammad on 5/18/21.
 //
+
 import UIKit
 
 open class RTAChangeRootSegue: UIStoryboardSegue {
