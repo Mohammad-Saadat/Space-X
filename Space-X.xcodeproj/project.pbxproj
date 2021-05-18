@@ -67,6 +67,8 @@
 		118059022653B96200BF4784 /* RTAChangeRootProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058FD2653B96200BF4784 /* RTAChangeRootProtocolExtension.swift */; };
 		118059032653B96200BF4784 /* RTAChangeRootSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058FE2653B96200BF4784 /* RTAChangeRootSegue.swift */; };
 		1180591B2653BB4900BF4784 /* InfoDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180591A2653BB4900BF4784 /* InfoDictionary.swift */; };
+		118059412653BD1200BF4784 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118059402653BD1200BF4784 /* Logger.swift */; };
+		118059462653BD2A00BF4784 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118059452653BD2A00BF4784 /* DependencyContainer.swift */; };
 		124EA8DC991FA8D64AFEE985 /* Pods_Space_XTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5594ABA85451330483758A06 /* Pods_Space_XTests.framework */; };
 		577D3A1693383BBECB021E6A /* Pods_Space_X_Space_XUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDA811E27785C37D13FD2C5 /* Pods_Space_X_Space_XUITests.framework */; };
 		7846383061B5B0521463F00A /* Pods_Space_X.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BD45C203C1F366DA62480A /* Pods_Space_X.framework */; };
@@ -159,6 +161,8 @@
 		118058FD2653B96200BF4784 /* RTAChangeRootProtocolExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTAChangeRootProtocolExtension.swift; sourceTree = "<group>"; };
 		118058FE2653B96200BF4784 /* RTAChangeRootSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTAChangeRootSegue.swift; sourceTree = "<group>"; };
 		1180591A2653BB4900BF4784 /* InfoDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDictionary.swift; sourceTree = "<group>"; };
+		118059402653BD1200BF4784 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		118059452653BD2A00BF4784 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		348C24E3F220926746D3E98B /* Pods-Space-X.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X.debug.xcconfig"; path = "Target Support Files/Pods-Space-X/Pods-Space-X.debug.xcconfig"; sourceTree = "<group>"; };
 		4F945F7466E44EA1717A55AF /* Pods-Space-X-Space-XUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X-Space-XUITests.debug.xcconfig"; path = "Target Support Files/Pods-Space-X-Space-XUITests/Pods-Space-X-Space-XUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5594ABA85451330483758A06 /* Pods_Space_XTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Space_XTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -253,8 +257,10 @@
 			children = (
 				11794C8126538F1B00B99377 /* AppDelegate.swift */,
 				118058EC2653ACE700BF4784 /* CustomClasses */,
+				1180594A2653BD3500BF4784 /* DependencyContainer */,
 				118057D6265395C100BF4784 /* Extenstions */,
 				118059192653BB4000BF4784 /* Helper */,
+				1180593F2653BD0400BF4784 /* Logger */,
 				118058792653A70F00BF4784 /* Remote */,
 				118058E12653AC1F00BF4784 /* WindowManager */,
 			);
@@ -521,6 +527,22 @@
 				1180591A2653BB4900BF4784 /* InfoDictionary.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		1180593F2653BD0400BF4784 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				118059402653BD1200BF4784 /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		1180594A2653BD3500BF4784 /* DependencyContainer */ = {
+			isa = PBXGroup;
+			children = (
+				118059452653BD2A00BF4784 /* DependencyContainer.swift */,
+			);
+			path = DependencyContainer;
 			sourceTree = "<group>";
 		};
 		4F505BD5570E111A73D60078 /* Pods */ = {
@@ -800,6 +822,7 @@
 				118057F92653986800BF4784 /* UIViewControllerExtention.swift in Sources */,
 				118058892653A7D400BF4784 /* NetworkStateNotifier.swift in Sources */,
 				118058CA2653A8AE00BF4784 /* NetworkActivityPlugin.swift in Sources */,
+				118059462653BD2A00BF4784 /* DependencyContainer.swift in Sources */,
 				118057EA2653981000BF4784 /* JSONDecoderExtension.swift in Sources */,
 				118058CB2653A8AE00BF4784 /* AppInfoPlugin.swift in Sources */,
 				118058E32653AC2A00BF4784 /* WindowManager.swift in Sources */,
@@ -815,6 +838,7 @@
 				118058842653A7C400BF4784 /* NetStatus.swift in Sources */,
 				118058532653A5E100BF4784 /* SectionViewModel.swift in Sources */,
 				118058482653A4CD00BF4784 /* CALayerExtension.swift in Sources */,
+				118059412653BD1200BF4784 /* Logger.swift in Sources */,
 				118058D82653AAE500BF4784 /* BackendError.swift in Sources */,
 				118058DD2653AB7300BF4784 /* DataExtension.swift in Sources */,
 				118058E82653AC7500BF4784 /* StringExtention.swift in Sources */,
