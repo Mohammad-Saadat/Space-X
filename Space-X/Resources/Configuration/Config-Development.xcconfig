@@ -33,6 +33,7 @@ ENABLE_BITCODE = NO
 // ============
 BASE_DOMAIN = https:$(FORWARD_SLASH)/api.spacexdata.com
 BASE_URL = $(BASE_DOMAIN)/v4
+PRIVACY_POLICY_URL = https:$(FORWARD_SLASH)/google.com
 //ITUNES_APP_URL = itms-apps:$(FORWARD_SLASH)/itunes.apple.com/app/1536315424
 
 
