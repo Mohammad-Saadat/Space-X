@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,10 @@
 		118057F42653983300BF4784 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118057F32653983300BF4784 /* NibLoadableView.swift */; };
 		118057F92653986800BF4784 /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118057F82653986800BF4784 /* UIViewControllerExtention.swift */; };
 		118057FE265398A400BF4784 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118057FD265398A400BF4784 /* UIAlertController.swift */; };
+		118058312653A34300BF4784 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058302653A34300BF4784 /* UIImageViewExtension.swift */; };
+		118058432653A48A00BF4784 /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058422653A48A00BF4784 /* UIViewExtention.swift */; };
+		118058482653A4CD00BF4784 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118058472653A4CD00BF4784 /* CALayerExtension.swift */; };
+		1180584D2653A51B00BF4784 /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180584C2653A51B00BF4784 /* UIBezierPathExtension.swift */; };
 		124EA8DC991FA8D64AFEE985 /* Pods_Space_XTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5594ABA85451330483758A06 /* Pods_Space_XTests.framework */; };
 		577D3A1693383BBECB021E6A /* Pods_Space_X_Space_XUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDA811E27785C37D13FD2C5 /* Pods_Space_X_Space_XUITests.framework */; };
 		7846383061B5B0521463F00A /* Pods_Space_X.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BD45C203C1F366DA62480A /* Pods_Space_X.framework */; };
@@ -61,6 +65,10 @@
 		118057F32653983300BF4784 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		118057F82653986800BF4784 /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
 		118057FD265398A400BF4784 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		118058302653A34300BF4784 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		118058422653A48A00BF4784 /* UIViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
+		118058472653A4CD00BF4784 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
+		1180584C2653A51B00BF4784 /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPathExtension.swift; sourceTree = "<group>"; };
 		348C24E3F220926746D3E98B /* Pods-Space-X.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X.debug.xcconfig"; path = "Target Support Files/Pods-Space-X/Pods-Space-X.debug.xcconfig"; sourceTree = "<group>"; };
 		4F945F7466E44EA1717A55AF /* Pods-Space-X-Space-XUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X-Space-XUITests.debug.xcconfig"; path = "Target Support Files/Pods-Space-X-Space-XUITests/Pods-Space-X-Space-XUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5594ABA85451330483758A06 /* Pods_Space_XTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Space_XTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,8 +161,8 @@
 		11794CB726538F5600B99377 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				118057D6265395C100BF4784 /* Extenstions */,
 				11794C8126538F1B00B99377 /* AppDelegate.swift */,
+				118057D6265395C100BF4784 /* Extenstions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -207,8 +215,9 @@
 		118057D6265395C100BF4784 /* Extenstions */ = {
 			isa = PBXGroup;
 			children = (
-				118057D8265395D600BF4784 /* UIKit */,
+				1180581326539ACA00BF4784 /* Foundation */,
 				118057D7265395D000BF4784 /* Swift */,
+				118057D8265395D600BF4784 /* UIKit */,
 			);
 			path = Extenstions;
 			sourceTree = "<group>";
@@ -228,8 +237,19 @@
 				118057F32653983300BF4784 /* NibLoadableView.swift */,
 				118057F82653986800BF4784 /* UIViewControllerExtention.swift */,
 				118057FD265398A400BF4784 /* UIAlertController.swift */,
+				118058302653A34300BF4784 /* UIImageViewExtension.swift */,
+				118058422653A48A00BF4784 /* UIViewExtention.swift */,
+				118058472653A4CD00BF4784 /* CALayerExtension.swift */,
+				1180584C2653A51B00BF4784 /* UIBezierPathExtension.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		1180581326539ACA00BF4784 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		4F505BD5570E111A73D60078 /* Pods */ = {
@@ -242,7 +262,6 @@
 				64ACD94179BC023CF1133CF0 /* Pods-Space-XTests.debug.xcconfig */,
 				EFB81887F3B934F186585FCE /* Pods-Space-XTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -495,11 +514,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				118057F42653983300BF4784 /* NibLoadableView.swift in Sources */,
+				118058312653A34300BF4784 /* UIImageViewExtension.swift in Sources */,
 				118057F92653986800BF4784 /* UIViewControllerExtention.swift in Sources */,
 				118057EA2653981000BF4784 /* JSONDecoderExtension.swift in Sources */,
 				118057EF2653981F00BF4784 /* JSONEncoderExtension.swift in Sources */,
 				118057FE265398A400BF4784 /* UIAlertController.swift in Sources */,
+				118058482653A4CD00BF4784 /* CALayerExtension.swift in Sources */,
+				1180584D2653A51B00BF4784 /* UIBezierPathExtension.swift in Sources */,
 				11794C8226538F1B00B99377 /* AppDelegate.swift in Sources */,
+				118058432653A48A00BF4784 /* UIViewExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +692,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2W4U2P3K99;
 				INFOPLIST_FILE = "Space-X/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -689,6 +713,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2W4U2P3K99;
 				INFOPLIST_FILE = "Space-X/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
