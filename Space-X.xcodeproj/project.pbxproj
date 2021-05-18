@@ -13,6 +13,11 @@
 		11794C8E26538F1C00B99377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11794C8C26538F1C00B99377 /* LaunchScreen.storyboard */; };
 		11794C9926538F1D00B99377 /* Space_XTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11794C9826538F1D00B99377 /* Space_XTests.swift */; };
 		11794CA426538F1D00B99377 /* Space_XUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11794CA326538F1D00B99377 /* Space_XUITests.swift */; };
+		118057EA2653981000BF4784 /* JSONDecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118057E92653981000BF4784 /* JSONDecoderExtension.swift */; };
+		118057EF2653981F00BF4784 /* JSONEncoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118057EE2653981F00BF4784 /* JSONEncoderExtension.swift */; };
+		118057F42653983300BF4784 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118057F32653983300BF4784 /* NibLoadableView.swift */; };
+		118057F92653986800BF4784 /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118057F82653986800BF4784 /* UIViewControllerExtention.swift */; };
+		118057FE265398A400BF4784 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118057FD265398A400BF4784 /* UIAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		11794CCA2653916600B99377 /* Config-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Development.xcconfig"; sourceTree = "<group>"; };
 		11794CCB2653917500B99377 /* Config-Stage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Stage.xcconfig"; sourceTree = "<group>"; };
 		11794CCC2653918300B99377 /* Config-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Production.xcconfig"; sourceTree = "<group>"; };
+		118057E92653981000BF4784 /* JSONDecoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderExtension.swift; sourceTree = "<group>"; };
+		118057EE2653981F00BF4784 /* JSONEncoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncoderExtension.swift; sourceTree = "<group>"; };
+		118057F32653983300BF4784 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		118057F82653986800BF4784 /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
+		118057FD265398A400BF4784 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +199,8 @@
 		118057D7265395D000BF4784 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				118057E92653981000BF4784 /* JSONDecoderExtension.swift */,
+				118057EE2653981F00BF4784 /* JSONEncoderExtension.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -196,6 +208,9 @@
 		118057D8265395D600BF4784 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				118057F32653983300BF4784 /* NibLoadableView.swift */,
+				118057F82653986800BF4784 /* UIViewControllerExtention.swift */,
+				118057FD265398A400BF4784 /* UIAlertController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -330,6 +345,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				118057F42653983300BF4784 /* NibLoadableView.swift in Sources */,
+				118057F92653986800BF4784 /* UIViewControllerExtention.swift in Sources */,
+				118057EA2653981000BF4784 /* JSONDecoderExtension.swift in Sources */,
+				118057EF2653981F00BF4784 /* JSONEncoderExtension.swift in Sources */,
+				118057FE265398A400BF4784 /* UIAlertController.swift in Sources */,
 				11794C8226538F1B00B99377 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
