@@ -47,6 +47,9 @@
 		11794C9F26538F1D00B99377 /* Space-XUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space-XUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11794CA326538F1D00B99377 /* Space_XUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_XUITests.swift; sourceTree = "<group>"; };
 		11794CA526538F1D00B99377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11794CCA2653916600B99377 /* Config-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Development.xcconfig"; sourceTree = "<group>"; };
+		11794CCB2653917500B99377 /* Config-Stage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Stage.xcconfig"; sourceTree = "<group>"; };
+		11794CCC2653918300B99377 /* Config-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Production.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +107,6 @@
 				11794C8726538F1B00B99377 /* Main.storyboard */,
 				11794C8A26538F1C00B99377 /* Assets.xcassets */,
 				11794C8C26538F1C00B99377 /* LaunchScreen.storyboard */,
-				11794C8F26538F1C00B99377 /* Info.plist */,
 			);
 			path = "Space-X";
 			sourceTree = "<group>";
@@ -145,6 +147,7 @@
 		11794CB926538F6B00B99377 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				11794C8F26538F1C00B99377 /* Info.plist */,
 				11794CBA26538F8A00B99377 /* Configuration */,
 			);
 			path = Resources;
@@ -153,8 +156,19 @@
 		11794CBA26538F8A00B99377 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				11794CCA2653916600B99377 /* Config-Development.xcconfig */,
+				11794CCC2653918300B99377 /* Config-Production.xcconfig */,
+				11794CCB2653917500B99377 /* Config-Stage.xcconfig */,
+				11794CCD2653918A00B99377 /* GoogleServices */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		11794CCD2653918A00B99377 /* GoogleServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GoogleServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,7 +479,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Space-X/Info.plist";
+				INFOPLIST_FILE = "Space-X/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -484,7 +498,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Space-X/Info.plist";
+				INFOPLIST_FILE = "Space-X/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
