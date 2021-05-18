@@ -8,7 +8,16 @@
 
 import UIKit
 
-protocol HomeDisplayLogic: class {}
+protocol HomeDisplayLogic: class {
+    func hidePullToRefresh()
+    func showLoading()
+    func hideLoading()
+    func displayData()
+    
+    func displayNextPage()
+    func showPaginationLoading()
+    func hidePaginationLoading()
+}
 
 class HomeViewController: UIViewController {
     // MARK: - Object lifecycle
@@ -20,7 +29,7 @@ class HomeViewController: UIViewController {
     init(factory: HomeFactory) {
         super.init(nibName: HomeViewController.nibName, bundle: nil)
         self.factory = factory
-        self.factory.setup(viewController: self)
+        factory.setup(viewController: self)
         HomeLogger.logInit(owner: String(describing: HomeViewController.self))
     }
     
@@ -59,7 +68,7 @@ extension HomeViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.factory.setup(viewController: self)
+        factory.setup(viewController: self)
     }
 }
 
@@ -78,12 +87,32 @@ extension HomeViewController {}
 
 // MARK: - Display Logic
 extension HomeViewController: HomeDisplayLogic {
+    func displayData() {
+        
+    }
+    
+    func showPaginationLoading() {
+        
+    }
+    
+    func hidePaginationLoading() {
+        
+    }
+    
+    func displayNextPage() {
+        
+    }
+    
     func showLoading() {
         view.showLoading()
     }
     
     func hideLoading() {
         view.hideLoading()
+    }
+    
+    func hidePullToRefresh() {
+        pullToRefresh.endRefreshing()
     }
 }
 
