@@ -14,11 +14,13 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.13.1):
     - PromiseKit/CorePromise
+  - UIScrollView-InfiniteScroll (1.1.0)
 
 DEPENDENCIES:
   - Kingfisher
   - Moya
   - PromiseKit
+  - UIScrollView-InfiniteScroll
 
 SPEC REPOS:
   trunk:
@@ -26,13 +28,15 @@ SPEC REPOS:
     - Kingfisher
     - Moya
     - PromiseKit
+    - UIScrollView-InfiniteScroll
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+  UIScrollView-InfiniteScroll: 3ef456bcbe759c19f510a383cff96e6647c98c98
 
-PODFILE CHECKSUM: 620769a99e28f01c8b515b5373b534375ee2a4c5
+PODFILE CHECKSUM: 3c049a177ca0b513e9fca0960f09fb809740da1d
 
 COCOAPODS: 1.10.1

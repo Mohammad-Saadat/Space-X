@@ -34,11 +34,22 @@ class HomeViewController: UIViewController {
     // MARK: Private
     private var factory: HomeFactory!
     
+    // pull to refresh
+    private lazy var pullToRefresh: UIRefreshControl = {
+        let pullToRefresh = UIRefreshControl()
+        pullToRefresh.tintColor = .black
+        pullToRefresh.addTarget(self, action: #selector(refreshPage), for: .valueChanged)
+        tableView.alwaysBounceVertical = true
+        tableView.refreshControl = pullToRefresh
+        return pullToRefresh
+    }()
+    
     // MARK: Public
     var interactor: HomeBusinessLogic?
     var router: (NSObjectProtocol & HomeRoutingLogic & HomeDataPassing)?
     
     // MARK: - Outlets
+    @IBOutlet private weak var tableView: DefaultTableView!
 }
 
 // MARK: - View Controller
@@ -55,13 +66,33 @@ extension HomeViewController {
 // MARK: - Methods
 
 // MARK: Private
-private extension HomeViewController {}
+private extension HomeViewController {
+    @objc func refreshPage() {
+        self.pullToRefresh.beginRefreshing()
+//        interactor?.refreshPage()
+    }
+}
 
 // MARK: Public
 extension HomeViewController {}
 
 // MARK: - Display Logic
-extension HomeViewController: HomeDisplayLogic {}
+extension HomeViewController: HomeDisplayLogic {
+    func showLoading() {
+        view.showLoading()
+    }
+    
+    func hideLoading() {
+        view.hideLoading()
+    }
+}
 
 // MARK: - Actions
 extension HomeViewController {}
+
+// MARK: - PaginationProtocol
+extension HomeViewController: PaginationProtocol {
+    func loadNextPage() {
+//        self.interactor?.fetchNextPage(request: .init())
+    }
+}
