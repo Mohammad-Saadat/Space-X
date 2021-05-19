@@ -99,8 +99,8 @@ extension HomeViewController: HomeDisplayLogic {
         
     }
     
-    func displayNextPage() {
-        
+    func displayNextPage(viewModel: Home.NextPage.ViewModel) {
+        tableView.appendCells(cells: viewModel.cells, sectionIndex: 0)
     }
     
     func showLoading() {
