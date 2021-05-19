@@ -11,12 +11,30 @@ import UIKit
 enum Home {
     // MARK: Use cases
     
-    enum Something {
-        struct Request {
-        }
+    enum Item {
         struct Response {
+//            var goals: [Goal]?
         }
         struct ViewModel {
+            var sections: [SectionViewModel]
+        }
+    }
+    
+    enum NextPage {
+        struct Response {
+//            var goals: [Goal]?
+        }
+        struct ViewModel {
+            var cells: [CellViewModel]
+        }
+    }
+    
+    enum ErrorModel {
+        struct Response {
+            var error: Error
+        }
+        struct ViewModel {
+            var error: Error
         }
     }
 }
