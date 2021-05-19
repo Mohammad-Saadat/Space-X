@@ -9,31 +9,30 @@
 import Foundation
 
 enum HomeEndpoint {
-//    case something
+    case launches(param: Options)
 }
 
 extension HomeEndpoint: RequestProtocol {
     
     public var relativePath: String {
-//        switch self {
-//        case .something: return "/"
-//        }
-        return "/"
+        switch self {
+        case .launches:
+            return "/launches/query"
+        }
     }
     
     public var method: HTTPMethod {
-//        switch self {
-//        case .something: return .get
-//        }
-        return .get
+        switch self {
+        case .launches:
+            return .post
+        }
     }
     
     public var requestType: RequestType {
-//        switch self {
-//        case .something:
-//            return .requestPlain
-//        }
-        return .requestPlain
+        switch self {
+        case .launches(let params):
+            return .requestJSONEncodable(params)
+        }
     }
     
     public var headers: [String: String]? {
