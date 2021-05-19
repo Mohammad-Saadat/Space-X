@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import PromiseKit
 
-protocol HomeWorkerLogic {}
+protocol HomeWorkerLogic {
+    func getLaunches(params: Options) -> Promise<PageLaunch>
+}
 
 class HomeWorker {
     // MARK: - Object lifecycle
@@ -34,4 +37,8 @@ class HomeWorker {
 private extension HomeWorker {}
 
 // MARK: - Worker Logic
-extension HomeWorker: HomeWorkerLogic {}
+extension HomeWorker: HomeWorkerLogic {
+    func getLaunches(params: Options) -> Promise<PageLaunch> {
+        service.getLaunches(params: params)
+    }
+}
