@@ -13,7 +13,7 @@ enum Home {
     
     enum Item {
         struct Response {
-//            var goals: [Goal]?
+            var launchDatas: [LaunchDate]?
         }
         struct ViewModel {
             var sections: [SectionViewModel]
@@ -22,7 +22,7 @@ enum Home {
     
     enum NextPage {
         struct Response {
-//            var goals: [Goal]?
+            var launchDatas: [LaunchDate]?
         }
         struct ViewModel {
             var cells: [CellViewModel]
