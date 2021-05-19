@@ -9,7 +9,14 @@
 import UIKit
 
 protocol HomePresentationLogic {
-    //    func presentSomething(response: Home.Something.Response)
+    func presentError(response: Home.ErrorModel.Response)
+    func hidePullToRefresh()
+    func showLoading()
+    func hideLoading()
+    func presentData(response: Home.Item.Response)
+    func presentNextPage(response: Home.NextPage.Response)
+    func showPaginationLoading()
+    func hidePaginationLoading()
 }
 
 class HomePresenter {
@@ -38,4 +45,53 @@ private extension HomePresenter {}
 extension HomePresenter {}
 
 // MARK: - Presentation Logic
-extension HomePresenter: HomePresentationLogic {}
+extension HomePresenter: HomePresentationLogic {
+    func presentError(response: Home.ErrorModel.Response) {
+        DispatchQueue.main.async {
+            self.viewController?.displayError(viewModel: .init(error: response.error))
+        }
+    }
+    
+    func hidePullToRefresh() {
+        DispatchQueue.main.async {
+            self.viewController?.hidePullToRefresh()
+        }
+    }
+    
+    func showLoading() {
+        DispatchQueue.main.async {
+            self.viewController?.showLoading()
+        }
+    }
+    
+    func hideLoading() {
+        DispatchQueue.main.async {
+            self.viewController?.hideLoading()
+        }
+    }
+    
+    func presentData(response: Home.Item.Response) {
+        DispatchQueue.main.async {
+            
+        }
+    }
+    
+    func presentNextPage(response: Home.NextPage.Response) {
+        DispatchQueue.main.async {
+            
+        }
+    }
+    
+    func showPaginationLoading() {
+        DispatchQueue.main.async {
+            self.viewController?.showPaginationLoading()
+        }
+    }
+    
+    func hidePaginationLoading() {
+        DispatchQueue.main.async {
+            self.viewController?.hidePaginationLoading()
+        }
+    }
+    
+}
