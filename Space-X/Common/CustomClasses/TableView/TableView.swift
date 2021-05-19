@@ -43,7 +43,6 @@ class DefaultTableView: UITableView {
         = {
         
         EmptyListView.loadFromNib()
-        //        UIView.loadFromNib(named: "EmptyListView") as! EmptyListView
     }()
     var onDataSourceChanged: (() -> Void)?
 
