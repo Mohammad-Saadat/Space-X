@@ -598,8 +598,9 @@
 		1188910A2653F02F00F5BCA0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1162311D2653EA2A009D91DF /* HomeViewController.xib */,
 				116231202653EA2A009D91DF /* HomeViewController.swift */,
+				1162311D2653EA2A009D91DF /* HomeViewController.xib */,
+				11EB6F6D2655A01B005FD2D7 /* tableViewCells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -639,6 +640,13 @@
 				11EB6F6826559889005FD2D7 /* LaunchParams.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		11EB6F6D2655A01B005FD2D7 /* tableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tableViewCells;
 			sourceTree = "<group>";
 		};
 		4F505BD5570E111A73D60078 /* Pods */ = {
@@ -732,7 +740,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					11794C7D26538F1B00B99377 = {
 						CreatedOnToolsVersion = 12.4;
@@ -1146,7 +1154,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DN2PG7K999;
 				INFOPLIST_FILE = "Space-X/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1167,7 +1175,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DN2PG7K999;
 				INFOPLIST_FILE = "Space-X/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

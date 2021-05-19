@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - PageLaunch
 struct PageLaunch: Codable {
-    let docs: [Doc]?
+    let docs: [LaunchDate]?
     let totalDocs, limit, totalPages, page: Int?
     let pagingCounter: Int?
     let hasPrevPage, hasNextPage: Bool?
@@ -18,7 +18,7 @@ struct PageLaunch: Codable {
 }
 
 // MARK: - Doc
-struct Doc: Codable {
+struct LaunchDate: Codable {
     let fairings: Fairings?
     let links: Links?
     let staticFireDateUTC: String?
@@ -56,6 +56,8 @@ struct Doc: Codable {
     }
 }
 
+extension LaunchDate: Equatable {}
+
 // MARK: - Core
 struct Core: Codable {
     let core: String?
@@ -68,9 +70,13 @@ struct Core: Codable {
     }
 }
 
+extension Core: Equatable {}
+
 enum DatePrecision: String, Codable {
     case hour = "hour"
 }
+
+extension DatePrecision: Equatable {}
 
 // MARK: - Failure
 struct Failure: Codable {
@@ -78,6 +84,8 @@ struct Failure: Codable {
     let altitude: Int?
     let reason: String?
 }
+
+extension Failure: Equatable {}
 
 // MARK: - Fairings
 struct Fairings: Codable {
@@ -89,6 +97,8 @@ struct Fairings: Codable {
         case recovered
     }
 }
+
+extension Fairings: Equatable {}
 
 // MARK: - Links
 struct Links: Codable {
@@ -107,12 +117,18 @@ struct Links: Codable {
     }
 }
 
+extension Links: Equatable {}
+
 // MARK: - Patch
 struct Patch: Codable {
     let small, large: String?
 }
 
+extension Patch: Equatable {}
+
 // MARK: - Reddit
 struct Reddit: Codable {
     let launch: String?
 }
+
+extension Reddit: Equatable {}

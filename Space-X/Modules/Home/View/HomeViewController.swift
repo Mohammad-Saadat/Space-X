@@ -9,13 +9,11 @@
 import UIKit
 
 protocol HomeDisplayLogic: class {
-    
     func displayError(viewModel: Home.ErrorModel.ViewModel)
     func hidePullToRefresh()
     func showLoading()
     func hideLoading()
     func displayData(viewModel: Home.Item.ViewModel)
-    
     func displayNextPage(viewModel: Home.NextPage.ViewModel)
     func showPaginationLoading()
     func hidePaginationLoading()
@@ -78,7 +76,7 @@ extension HomeViewController {
         super.viewDidLoad()
         
         factory.setup(viewController: self)
-//        interactor?.fetchData()
+        interactor?.fetchData()
     }
 }
 
@@ -88,7 +86,7 @@ extension HomeViewController {
 private extension HomeViewController {
     @objc func refreshPage() {
         self.pullToRefresh.beginRefreshing()
-//        interactor?.refreshPage()
+        interactor?.refreshPage()
     }
 }
 
@@ -142,6 +140,6 @@ extension HomeViewController {}
 // MARK: - PaginationProtocol
 extension HomeViewController: PaginationProtocol {
     func loadNextPage() {
-//        self.interactor?.fetchNextPage(request: .init())
+        self.interactor?.fetchNextPage()
     }
 }
