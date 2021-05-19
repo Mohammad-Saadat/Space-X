@@ -87,8 +87,18 @@ extension HomeViewController {}
 
 // MARK: - Display Logic
 extension HomeViewController: HomeDisplayLogic {
-    func displayData() {
-        
+    func displayError(viewModel: Home.ErrorModel.ViewModel) {
+        let action = UIAlertAction.init(title: "OK", style: .cancel, handler: nil)
+        presentMessege(title: "Error",
+                       message: viewModel.error.localizedDescription,
+                       additionalActions: action,
+                       preferredStyle: .alert)
+    }
+    
+    func displayData(viewModel: Home.Item.ViewModel) {
+        let dataSource = DefaultTableViewDataSource(sections: viewModel.sections,
+                                                    paginationDelegate: self)
+        tableView.displayData(dataSource)
     }
     
     func showPaginationLoading() {
