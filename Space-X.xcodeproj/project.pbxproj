@@ -83,6 +83,8 @@
 		118059462653BD2A00BF4784 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118059452653BD2A00BF4784 /* DependencyContainer.swift */; };
 		118891262653F7C000F5BCA0 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118891252653F7C000F5BCA0 /* ActivityIndicator.swift */; };
 		1188912B2653F7D500F5BCA0 /* ViewStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1188912A2653F7D500F5BCA0 /* ViewStateManager.swift */; };
+		11EB6F642655968D005FD2D7 /* LaunchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EB6F632655968D005FD2D7 /* LaunchPage.swift */; };
+		11EB6F6926559889005FD2D7 /* LaunchParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EB6F6826559889005FD2D7 /* LaunchParams.swift */; };
 		124EA8DC991FA8D64AFEE985 /* Pods_Space_XTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5594ABA85451330483758A06 /* Pods_Space_XTests.framework */; };
 		577D3A1693383BBECB021E6A /* Pods_Space_X_Space_XUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDA811E27785C37D13FD2C5 /* Pods_Space_X_Space_XUITests.framework */; };
 		7846383061B5B0521463F00A /* Pods_Space_X.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BD45C203C1F366DA62480A /* Pods_Space_X.framework */; };
@@ -191,6 +193,8 @@
 		118059452653BD2A00BF4784 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		118891252653F7C000F5BCA0 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		1188912A2653F7D500F5BCA0 /* ViewStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStateManager.swift; sourceTree = "<group>"; };
+		11EB6F632655968D005FD2D7 /* LaunchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPage.swift; sourceTree = "<group>"; };
+		11EB6F6826559889005FD2D7 /* LaunchParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchParams.swift; sourceTree = "<group>"; };
 		348C24E3F220926746D3E98B /* Pods-Space-X.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X.debug.xcconfig"; path = "Target Support Files/Pods-Space-X/Pods-Space-X.debug.xcconfig"; sourceTree = "<group>"; };
 		4F945F7466E44EA1717A55AF /* Pods-Space-X-Space-XUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X-Space-XUITests.debug.xcconfig"; path = "Target Support Files/Pods-Space-X-Space-XUITests/Pods-Space-X-Space-XUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5594ABA85451330483758A06 /* Pods_Space_XTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Space_XTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -305,6 +309,7 @@
 				118057D6265395C100BF4784 /* Extenstions */,
 				118059192653BB4000BF4784 /* Helper */,
 				1180593F2653BD0400BF4784 /* Logger */,
+				11EB6F6226559673005FD2D7 /* Models */,
 				118058792653A70F00BF4784 /* Remote */,
 				118058E12653AC1F00BF4784 /* WindowManager */,
 			);
@@ -627,6 +632,15 @@
 			path = ActivityIndicator;
 			sourceTree = "<group>";
 		};
+		11EB6F6226559673005FD2D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11EB6F632655968D005FD2D7 /* LaunchPage.swift */,
+				11EB6F6826559889005FD2D7 /* LaunchParams.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		4F505BD5570E111A73D60078 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -903,6 +917,7 @@
 				118058EE2653ACF600BF4784 /* CustomNavigationController.swift in Sources */,
 				118058CC2653A8AE00BF4784 /* NetworkLoggerPlugin.swift in Sources */,
 				118058CE2653A8AE00BF4784 /* CustomUrlEncoding.swift in Sources */,
+				11EB6F642655968D005FD2D7 /* LaunchPage.swift in Sources */,
 				118058312653A34300BF4784 /* UIImageViewExtension.swift in Sources */,
 				116231272653EA2A009D91DF /* HomeEndpoint.swift in Sources */,
 				118057F92653986800BF4784 /* UIViewControllerExtention.swift in Sources */,
@@ -958,6 +973,7 @@
 				118058682653A63800BF4784 /* EmptyListView.swift in Sources */,
 				118058C42653A8AD00BF4784 /* NetworkManagerProtocol.swift in Sources */,
 				118058CF2653A8AE00BF4784 /* MoyaTarget.swift in Sources */,
+				11EB6F6926559889005FD2D7 /* LaunchParams.swift in Sources */,
 				118058C02653A8AD00BF4784 /* UnAuthorizedErrorHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1128,7 +1144,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2W4U2P3K99;
+				DEVELOPMENT_TEAM = DN2PG7K999;
 				INFOPLIST_FILE = "Space-X/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1149,7 +1165,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2W4U2P3K99;
+				DEVELOPMENT_TEAM = DN2PG7K999;
 				INFOPLIST_FILE = "Space-X/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

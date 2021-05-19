@@ -9,12 +9,14 @@
 import UIKit
 
 protocol HomeDisplayLogic: class {
+    
+    func displayError(viewModel: Home.ErrorModel.ViewModel)
     func hidePullToRefresh()
     func showLoading()
     func hideLoading()
-    func displayData()
+    func displayData(viewModel: Home.Item.ViewModel)
     
-    func displayNextPage()
+    func displayNextPage(viewModel: Home.NextPage.ViewModel)
     func showPaginationLoading()
     func hidePaginationLoading()
 }
@@ -52,6 +54,13 @@ class HomeViewController: UIViewController {
         tableView.refreshControl = pullToRefresh
         return pullToRefresh
     }()
+    private lazy var footerActitvityIndicator: UIActivityIndicatorView = {
+        let spinner = UIActivityIndicatorView(style: .gray)
+        spinner.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: self.tableView.bounds.width, height: CGFloat(85))
+        spinner.startAnimating()
+        spinner.hidesWhenStopped = true
+        return spinner
+    }()
     
     // MARK: Public
     var interactor: HomeBusinessLogic?
@@ -69,6 +78,7 @@ extension HomeViewController {
         super.viewDidLoad()
         
         factory.setup(viewController: self)
+//        interactor?.fetchData()
     }
 }
 
@@ -102,11 +112,11 @@ extension HomeViewController: HomeDisplayLogic {
     }
     
     func showPaginationLoading() {
-        
+        tableView.setTableFooter(footerActitvityIndicator)
     }
     
     func hidePaginationLoading() {
-        
+        tableView.removeTableFooter()
     }
     
     func displayNextPage(viewModel: Home.NextPage.ViewModel) {
