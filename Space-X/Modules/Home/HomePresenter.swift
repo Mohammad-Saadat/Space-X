@@ -71,14 +71,17 @@ extension HomePresenter: HomePresentationLogic {
     }
     
     func presentData(response: Home.Item.Response) {
+        let viewModels = response.launchDatas?.compactMap { ItemCellViewModel(launchData: $0) } ?? []
+        let section = DefaultSection(cells: viewModels)
         DispatchQueue.main.async {
-            
+            self.viewController?.displayData(viewModel: .init(sections: [section]))
         }
     }
     
     func presentNextPage(response: Home.NextPage.Response) {
+        let viewModels = response.launchDatas?.compactMap { ItemCellViewModel(launchData: $0) } ?? []
         DispatchQueue.main.async {
-            
+            self.viewController?.displayNextPage(viewModel: .init(cells: viewModels))
         }
     }
     

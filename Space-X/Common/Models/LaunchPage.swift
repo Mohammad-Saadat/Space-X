@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - PageLaunch
 struct PageLaunch: Codable {
-    let docs: [LaunchDate]?
+    let docs: [LaunchData]?
     let totalDocs, limit, totalPages, page: Int?
     let pagingCounter: Int?
     let hasPrevPage, hasNextPage: Bool?
@@ -18,7 +18,7 @@ struct PageLaunch: Codable {
 }
 
 // MARK: - Doc
-struct LaunchDate: Codable {
+struct LaunchData: Codable {
     let fairings: Fairings?
     let links: Links?
     let staticFireDateUTC: String?
@@ -56,7 +56,7 @@ struct LaunchDate: Codable {
     }
 }
 
-extension LaunchDate: Equatable {}
+extension LaunchData: Equatable {}
 
 // MARK: - Core
 struct Core: Codable {

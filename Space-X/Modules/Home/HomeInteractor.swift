@@ -31,7 +31,7 @@ class HomeInteractor: HomeDataStore {
     
     // MARK: Private
     private var page: Int = 1
-    private var launchDatas = [LaunchDate]()
+    private var launchDatas = [LaunchData]()
     
     // MARK: Public
     var presenter: HomePresentationLogic?
