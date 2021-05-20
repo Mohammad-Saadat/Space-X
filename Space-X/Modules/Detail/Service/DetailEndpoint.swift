@@ -17,7 +17,7 @@ extension DetailEndpoint: RequestProtocol {
     public var relativePath: String {
         switch self {
         case .launche(let id):
-            return "/launches/query/\(id)"
+            return "/launches/\(id)"
         }
     }
     
