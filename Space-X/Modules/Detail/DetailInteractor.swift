@@ -9,10 +9,13 @@
 import UIKit
 
 protocol DetailBusinessLogic {
-    //    func doSomething(request: Detail.Something.Request)
+    func fetchLaunchInfo()
 }
 
-protocol DetailDataStore {}
+protocol DetailDataStore {
+    var launchId: String? { get set }
+    var articleLink: String? { get set }
+}
 
 class DetailInteractor: DetailDataStore {
     // MARK: - Object lifecycle
@@ -27,6 +30,10 @@ class DetailInteractor: DetailDataStore {
     
     // MARK: - Properties
     
+    // MARK: Private
+    internal var launchId: String?
+    internal var articleLink: String?
+    
     // MARK: Public
     var presenter: DetailPresentationLogic?
     var worker: DetailWorkerLogic?
@@ -35,10 +42,30 @@ class DetailInteractor: DetailDataStore {
 // MARK: - Methods
 
 // MARK: Private
-private extension DetailInteractor {}
+private extension DetailInteractor {
+    func presentError(_ error: Error) {
+        self.presenter?.presentError(response: .init(error: error))
+    }
+    
+    func hideLoadings() {
+        self.presenter?.hideLoading()
+    }
+}
 
 // MARK: Public
 extension DetailInteractor {}
 
 // MARK: - Business Logics
-extension DetailInteractor: DetailBusinessLogic {}
+extension DetailInteractor: DetailBusinessLogic {
+    func fetchLaunchInfo() {
+        guard let launchId = self.launchId else { return }
+        self.presenter?.showLoading()
+        worker?.getLaunche(id: launchId).done { [weak self] response in
+            guard let `self` = self else { return }
+            self.articleLink = response.links?.article
+            self.presenter?.presentData(response: .init(launchData: response))
+        }
+        .catch(presentError)
+        .finally(hideLoadings)
+    }
+}
