@@ -9,30 +9,26 @@
 import Foundation
 
 enum DetailEndpoint {
-//    case something
+    case launche(id: String)
 }
 
 extension DetailEndpoint: RequestProtocol {
     
     public var relativePath: String {
-//        switch self {
-//        case .something: return "/"
-//        }
-        return "/"
+        switch self {
+        case .launche(let id):
+            return "/launches/query/\(id)"
+        }
     }
     
     public var method: HTTPMethod {
-//        switch self {
-//        case .something: return .get
-//        }
-        return .get
+        switch self {
+        case .launche:
+            return .get
+        }
     }
     
     public var requestType: RequestType {
-//        switch self {
-//        case .something:
-//            return .requestPlain
-//        }
         return .requestPlain
     }
     
@@ -41,6 +37,6 @@ extension DetailEndpoint: RequestProtocol {
     }
     
     var authorizationType: AuthType {
-        return .bearer
+        return .none
     }
 }

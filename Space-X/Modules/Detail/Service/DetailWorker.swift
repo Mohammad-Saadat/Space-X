@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import PromiseKit
 
-protocol DetailWorkerLogic {}
+protocol DetailWorkerLogic {
+    func getLaunche(id: String) -> Promise<LaunchData>
+}
 
 class DetailWorker {
     // MARK: - Object lifecycle
@@ -34,4 +37,8 @@ class DetailWorker {
 private extension DetailWorker {}
 
 // MARK: - Worker Logic
-extension DetailWorker: DetailWorkerLogic {}
+extension DetailWorker: DetailWorkerLogic {
+    func getLaunche(id: String) -> Promise<LaunchData> {
+        service.getLaunche(id: id)
+    }
+}

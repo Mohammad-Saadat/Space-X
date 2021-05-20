@@ -30,4 +30,10 @@ final class DetailService {
 // MARK: - Methods
 
 // MARK: Public
-extension DetailService {}
+extension DetailService {
+    func getLaunche(id: String) -> Promise<LaunchData> {
+            return networkManager
+                .request(DetailEndpoint.launche(id: id))
+                .recover(NetworkErrors.parseError)
+    }
+}
