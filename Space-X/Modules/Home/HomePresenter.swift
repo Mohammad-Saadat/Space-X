@@ -14,6 +14,7 @@ protocol HomePresentationLogic {
     func showLoading()
     func hideLoading()
     func presentData(response: Home.Item.Response)
+    func presentUpdate(response: Home.Update.Response)
     func presentNextPage(response: Home.NextPage.Response)
     func showPaginationLoading()
     func hidePaginationLoading()
@@ -46,6 +47,15 @@ extension HomePresenter {}
 
 // MARK: - Presentation Logic
 extension HomePresenter: HomePresentationLogic {
+    func presentUpdate(response: Home.Update.Response) {
+        let viewModels = response.launchDatas.compactMap { ItemCellViewModel(launchData: $0) } ?? []
+        let section = DefaultSection(cells: viewModels)
+        DispatchQueue.main.async {
+            self.viewController?.displayUpdateData(viewModel: .init(sections: [section],
+                                                                    indexpaths: response.indexpaths))
+        }
+    }
+    
     func presentError(response: Home.ErrorModel.Response) {
         DispatchQueue.main.async {
             self.viewController?.displayError(viewModel: .init(error: response.error))

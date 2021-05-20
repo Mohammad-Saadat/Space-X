@@ -17,4 +17,5 @@ protocol HomeViewControllerFactory {
 
 protocol HomeServiceFactory {
     func makeHomeService() -> HomeService
+    func getNetworkStatusListerner() -> NetworkStateNotifier
 }

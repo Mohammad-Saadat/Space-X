@@ -28,7 +28,7 @@ extension HomeDependencyContainer: HomeFactory {
     
     func setup(viewController: HomeViewController) {
         guard viewController.interactor == nil else { return }
-        let interactor = HomeInteractor()
+        let interactor = HomeInteractor(networkStateNotifier: getNetworkStatusListerner())
         let presenter = HomePresenter()
         let router = HomeRouter()
         let worker = HomeWorker(service: makeHomeService())
@@ -43,5 +43,9 @@ extension HomeDependencyContainer: HomeFactory {
     
     func makeHomeService() -> HomeService {
         return HomeService(networkManager: networkManager)
+    }
+    
+    func getNetworkStatusListerner() -> NetworkStateNotifier {
+        return networkStateNotifier
     }
 }

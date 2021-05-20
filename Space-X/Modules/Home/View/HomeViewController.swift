@@ -14,6 +14,7 @@ protocol HomeDisplayLogic: class {
     func showLoading()
     func hideLoading()
     func displayData(viewModel: Home.Item.ViewModel)
+    func displayUpdateData(viewModel: Home.Update.ViewModel)
     func displayNextPage(viewModel: Home.NextPage.ViewModel)
     func showPaginationLoading()
     func hidePaginationLoading()
@@ -86,6 +87,7 @@ extension HomeViewController {
         
         factory.setup(viewController: self)
         interactor?.fetchData()
+        interactor?.startTimer()
         title = "SpaceX rocket launches"
     }
 }
@@ -117,6 +119,10 @@ extension HomeViewController: HomeDisplayLogic {
         let dataSource = DefaultTableViewDataSource(sections: viewModel.sections,
                                                     paginationDelegate: self)
         tableView.displayData(dataSource)
+    }
+    
+    func displayUpdateData(viewModel: Home.Update.ViewModel) {
+        tableView.updateDataSourceAndReloadCells(sections: viewModel.sections, updateIndexPath: viewModel.indexpaths)
     }
     
     func showPaginationLoading() {

@@ -9,7 +9,7 @@
 import Foundation
 
 enum HomeEndpoint {
-    case launches(param: Options)
+    case launches(param: LaunchParams)
 }
 
 extension HomeEndpoint: RequestProtocol {

@@ -7,7 +7,15 @@
 
 import Foundation
 
+struct LaunchParams: Encodable {
+    // MARK: - Properties
+    let options: Options
+}
+
 struct Options: Encodable {
     // MARK: - Properties
     let page: Int
+    let limit: Int?
+    
+    static let defaultLimit = 10
 }

@@ -10,6 +10,16 @@ import UIKit
 
 enum Home {
     // MARK: Use cases
+    enum Update {
+        struct Response {
+            var launchDatas: [LaunchData]
+            var indexpaths: [IndexPath]
+        }
+        struct ViewModel {
+            var sections: [SectionViewModel]
+            var indexpaths: [IndexPath]
+        }
+    }
     
     enum Item {
         struct Response {

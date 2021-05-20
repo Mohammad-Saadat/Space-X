@@ -10,7 +10,7 @@ import UIKit
 import PromiseKit
 
 protocol HomeWorkerLogic {
-    func getLaunches(params: Options) -> Promise<PageLaunch>
+    func getLaunches(params: LaunchParams) -> Promise<PageLaunch>
 }
 
 class HomeWorker {
@@ -38,7 +38,7 @@ private extension HomeWorker {}
 
 // MARK: - Worker Logic
 extension HomeWorker: HomeWorkerLogic {
-    func getLaunches(params: Options) -> Promise<PageLaunch> {
+    func getLaunches(params: LaunchParams) -> Promise<PageLaunch> {
         service.getLaunches(params: params)
     }
 }

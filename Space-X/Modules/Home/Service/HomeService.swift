@@ -31,7 +31,7 @@ final class HomeService {
 
 // MARK: Public
 extension HomeService {
-    func getLaunches(params: Options) -> Promise<PageLaunch> {
+    func getLaunches(params: LaunchParams) -> Promise<PageLaunch> {
             return networkManager
                 .request(HomeEndpoint.launches(param: params))
                 .recover(NetworkErrors.parseError)
