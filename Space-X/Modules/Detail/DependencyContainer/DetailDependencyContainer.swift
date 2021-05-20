@@ -22,8 +22,25 @@ class DetailDependencyContainer: DependencyContainer {
 
 // MARK: - Factory
 extension DetailDependencyContainer: DetailFactory {
-    func makeDetailViewController() -> DetailViewController {
-        return DetailViewController(factory: self)
+    func makeDetailViewController(launchId: String) -> DetailViewController {
+        let vc = DetailViewController(factory: self)
+        vc.router?.dataStore?.launchId = launchId
+        return vc
+    }
+    
+    func setup(viewController: DetailViewController) {
+        guard viewController.interactor == nil else { return }
+        let interactor = DetailInteractor()
+        let presenter = DetailPresenter()
+        let router = DetailRouter()
+        let worker = DetailWorker(service: makeDetailService())
+        viewController.interactor = interactor
+        viewController.router = router
+        interactor.presenter = presenter
+        interactor.worker = worker
+        presenter.viewController = viewController
+        router.viewController = viewController
+        router.dataStore = interactor
     }
     
     func makeDetailService() -> DetailService {
