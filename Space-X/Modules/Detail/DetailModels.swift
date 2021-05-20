@@ -11,12 +11,25 @@ import UIKit
 enum Detail {
     // MARK: Use cases
     
-    enum Something {
-        struct Request {
-        }
+    enum ErrorModel {
         struct Response {
+            var error: Error
         }
         struct ViewModel {
+            var error: Error
+        }
+    }
+    
+    enum Info {
+        struct Response {
+            var launchData: LaunchData
+        }
+        struct ViewModel {
+            var name: String?
+            var detail: String?
+            var launchDate: String?
+            var failures: String?
+            var rocketImage: String?
         }
     }
 }
