@@ -65,7 +65,11 @@ class HomeViewController: UIViewController {
     var router: (NSObjectProtocol & HomeRoutingLogic & HomeDataPassing)?
     
     // MARK: - Outlets
-    @IBOutlet private weak var tableView: DefaultTableView!
+    @IBOutlet private weak var tableView: DefaultTableView! {
+        didSet {
+            tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 85, right: 0)
+        }
+    }
 }
 
 // MARK: - View Controller
@@ -76,6 +80,7 @@ extension HomeViewController {
         super.viewDidLoad()
         
         factory.setup(viewController: self)
+        self.title = "SpaceX rocket launches"
         interactor?.fetchData()
     }
 }
