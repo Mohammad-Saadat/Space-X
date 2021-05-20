@@ -42,7 +42,9 @@ private extension ItemTableViewCell {
     func setup(with model: LaunchData) {
         nameLabel.text = model.name
         detailsLabel.text = model.details
-        launchDateLabel.text = model.dateLocal?.toString()
+        if let launchDate = model.dateLocal?.toDate(withFormat: "yyyy-MM-dd'T'HH:mm:ssZ").toString(withFormat: "yyyy-MM-dd") {
+            launchDateLabel.text = "launch date: \(launchDate)"
+        }
         setRocketImage(with: model.links?.patch?.small)
     }
     

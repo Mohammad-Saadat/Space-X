@@ -203,15 +203,33 @@
 		11CA647226564184006E1B4D /* DateExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtention.swift; sourceTree = "<group>"; };
 		11EB6F632655968D005FD2D7 /* LaunchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPage.swift; sourceTree = "<group>"; };
 		11EB6F6826559889005FD2D7 /* LaunchParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchParams.swift; sourceTree = "<group>"; };
+		29242142FAC5075CA968E205 /* Pods-Space-X.release(development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X.release(development).xcconfig"; path = "Target Support Files/Pods-Space-X/Pods-Space-X.release(development).xcconfig"; sourceTree = "<group>"; };
+		2DB3AB84320356B30009CE8F /* Pods-Space-XTests.debug(development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-XTests.debug(development).xcconfig"; path = "Target Support Files/Pods-Space-XTests/Pods-Space-XTests.debug(development).xcconfig"; sourceTree = "<group>"; };
 		348C24E3F220926746D3E98B /* Pods-Space-X.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X.debug.xcconfig"; path = "Target Support Files/Pods-Space-X/Pods-Space-X.debug.xcconfig"; sourceTree = "<group>"; };
+		3718DDFE99696C59345CF863 /* Pods-Space-X-Space-XUITests.debug(stage).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X-Space-XUITests.debug(stage).xcconfig"; path = "Target Support Files/Pods-Space-X-Space-XUITests/Pods-Space-X-Space-XUITests.debug(stage).xcconfig"; sourceTree = "<group>"; };
+		3E9450C3E396ACCC828ECC83 /* Pods-Space-X-Space-XUITests.debug(development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X-Space-XUITests.debug(development).xcconfig"; path = "Target Support Files/Pods-Space-X-Space-XUITests/Pods-Space-X-Space-XUITests.debug(development).xcconfig"; sourceTree = "<group>"; };
+		4B8535CF6B0358D3F89DE724 /* Pods-Space-XTests.debug(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-XTests.debug(production).xcconfig"; path = "Target Support Files/Pods-Space-XTests/Pods-Space-XTests.debug(production).xcconfig"; sourceTree = "<group>"; };
 		4F945F7466E44EA1717A55AF /* Pods-Space-X-Space-XUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X-Space-XUITests.debug.xcconfig"; path = "Target Support Files/Pods-Space-X-Space-XUITests/Pods-Space-X-Space-XUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		51C10C47FD0153DDDB105C6D /* Pods-Space-X.debug(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X.debug(production).xcconfig"; path = "Target Support Files/Pods-Space-X/Pods-Space-X.debug(production).xcconfig"; sourceTree = "<group>"; };
+		51D5CF45106FB54B8C1A8F56 /* Pods-Space-X.debug(stage).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X.debug(stage).xcconfig"; path = "Target Support Files/Pods-Space-X/Pods-Space-X.debug(stage).xcconfig"; sourceTree = "<group>"; };
 		5594ABA85451330483758A06 /* Pods_Space_XTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Space_XTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56BA3FFB441F240424466C36 /* Pods-Space-XTests.release(development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-XTests.release(development).xcconfig"; path = "Target Support Files/Pods-Space-XTests/Pods-Space-XTests.release(development).xcconfig"; sourceTree = "<group>"; };
 		63BD45C203C1F366DA62480A /* Pods_Space_X.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Space_X.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64ACD94179BC023CF1133CF0 /* Pods-Space-XTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-XTests.debug.xcconfig"; path = "Target Support Files/Pods-Space-XTests/Pods-Space-XTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7956C81BE65AB967BF11C61E /* Pods-Space-X-Space-XUITests.release(stage).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X-Space-XUITests.release(stage).xcconfig"; path = "Target Support Files/Pods-Space-X-Space-XUITests/Pods-Space-X-Space-XUITests.release(stage).xcconfig"; sourceTree = "<group>"; };
+		7C79BEB1BC3CD7A816E5FCD2 /* Pods-Space-X-Space-XUITests.release(development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X-Space-XUITests.release(development).xcconfig"; path = "Target Support Files/Pods-Space-X-Space-XUITests/Pods-Space-X-Space-XUITests.release(development).xcconfig"; sourceTree = "<group>"; };
+		8A7BDAD1C3A7DFE886EDF67E /* Pods-Space-XTests.debug(stage).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-XTests.debug(stage).xcconfig"; path = "Target Support Files/Pods-Space-XTests/Pods-Space-XTests.debug(stage).xcconfig"; sourceTree = "<group>"; };
+		A65493E93AF9F37778F37F0B /* Pods-Space-X-Space-XUITests.debug(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X-Space-XUITests.debug(production).xcconfig"; path = "Target Support Files/Pods-Space-X-Space-XUITests/Pods-Space-X-Space-XUITests.debug(production).xcconfig"; sourceTree = "<group>"; };
 		ADDA811E27785C37D13FD2C5 /* Pods_Space_X_Space_XUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Space_X_Space_XUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D2A97548C22BEF97E104E3 /* Pods-Space-XTests.release(stage).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-XTests.release(stage).xcconfig"; path = "Target Support Files/Pods-Space-XTests/Pods-Space-XTests.release(stage).xcconfig"; sourceTree = "<group>"; };
+		C2D5A07EA63F4CCB2E13CD3A /* Pods-Space-X.debug(development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X.debug(development).xcconfig"; path = "Target Support Files/Pods-Space-X/Pods-Space-X.debug(development).xcconfig"; sourceTree = "<group>"; };
+		DD35DE0576742DBADF31A322 /* Pods-Space-X.release(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X.release(production).xcconfig"; path = "Target Support Files/Pods-Space-X/Pods-Space-X.release(production).xcconfig"; sourceTree = "<group>"; };
+		E30DA2D767427AFECFA3D20E /* Pods-Space-XTests.release(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-XTests.release(production).xcconfig"; path = "Target Support Files/Pods-Space-XTests/Pods-Space-XTests.release(production).xcconfig"; sourceTree = "<group>"; };
 		E854A4B116E362E326CE3D9F /* Pods-Space-X.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X.release.xcconfig"; path = "Target Support Files/Pods-Space-X/Pods-Space-X.release.xcconfig"; sourceTree = "<group>"; };
 		EFB81887F3B934F186585FCE /* Pods-Space-XTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-XTests.release.xcconfig"; path = "Target Support Files/Pods-Space-XTests/Pods-Space-XTests.release.xcconfig"; sourceTree = "<group>"; };
 		F28A71A0864CA45DCD581F6D /* Pods-Space-X-Space-XUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X-Space-XUITests.release.xcconfig"; path = "Target Support Files/Pods-Space-X-Space-XUITests/Pods-Space-X-Space-XUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F538094E44EF3FC70EE7F15B /* Pods-Space-X-Space-XUITests.release(production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X-Space-XUITests.release(production).xcconfig"; path = "Target Support Files/Pods-Space-X-Space-XUITests/Pods-Space-X-Space-XUITests.release(production).xcconfig"; sourceTree = "<group>"; };
+		FD7E35EEB865B566F24DD6EF /* Pods-Space-X.release(stage).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Space-X.release(stage).xcconfig"; path = "Target Support Files/Pods-Space-X/Pods-Space-X.release(stage).xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -670,6 +688,24 @@
 				F28A71A0864CA45DCD581F6D /* Pods-Space-X-Space-XUITests.release.xcconfig */,
 				64ACD94179BC023CF1133CF0 /* Pods-Space-XTests.debug.xcconfig */,
 				EFB81887F3B934F186585FCE /* Pods-Space-XTests.release.xcconfig */,
+				C2D5A07EA63F4CCB2E13CD3A /* Pods-Space-X.debug(development).xcconfig */,
+				51D5CF45106FB54B8C1A8F56 /* Pods-Space-X.debug(stage).xcconfig */,
+				FD7E35EEB865B566F24DD6EF /* Pods-Space-X.release(stage).xcconfig */,
+				29242142FAC5075CA968E205 /* Pods-Space-X.release(development).xcconfig */,
+				51C10C47FD0153DDDB105C6D /* Pods-Space-X.debug(production).xcconfig */,
+				DD35DE0576742DBADF31A322 /* Pods-Space-X.release(production).xcconfig */,
+				3E9450C3E396ACCC828ECC83 /* Pods-Space-X-Space-XUITests.debug(development).xcconfig */,
+				3718DDFE99696C59345CF863 /* Pods-Space-X-Space-XUITests.debug(stage).xcconfig */,
+				7956C81BE65AB967BF11C61E /* Pods-Space-X-Space-XUITests.release(stage).xcconfig */,
+				7C79BEB1BC3CD7A816E5FCD2 /* Pods-Space-X-Space-XUITests.release(development).xcconfig */,
+				A65493E93AF9F37778F37F0B /* Pods-Space-X-Space-XUITests.debug(production).xcconfig */,
+				F538094E44EF3FC70EE7F15B /* Pods-Space-X-Space-XUITests.release(production).xcconfig */,
+				2DB3AB84320356B30009CE8F /* Pods-Space-XTests.debug(development).xcconfig */,
+				8A7BDAD1C3A7DFE886EDF67E /* Pods-Space-XTests.debug(stage).xcconfig */,
+				B7D2A97548C22BEF97E104E3 /* Pods-Space-XTests.release(stage).xcconfig */,
+				56BA3FFB441F240424466C36 /* Pods-Space-XTests.release(development).xcconfig */,
+				4B8535CF6B0358D3F89DE724 /* Pods-Space-XTests.debug(production).xcconfig */,
+				E30DA2D767427AFECFA3D20E /* Pods-Space-XTests.release(production).xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1045,8 +1081,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		11794CA626538F1D00B99377 /* Debug */ = {
+		11794CA626538F1D00B99377 /* Debug(Development) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11794CCA2653916600B99377 /* Config-Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1096,7 +1133,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1104,10 +1141,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Debug(Development)";
 		};
-		11794CA726538F1D00B99377 /* Release */ = {
+		11794CA726538F1D00B99377 /* Debug(Production) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11794CCC2653918300B99377 /* Config-Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1151,7 +1189,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1159,11 +1197,11 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Debug(Production)";
 		};
-		11794CA926538F1D00B99377 /* Debug */ = {
+		11794CA926538F1D00B99377 /* Debug(Development) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 348C24E3F220926746D3E98B /* Pods-Space-X.debug.xcconfig */;
+			baseConfigurationReference = C2D5A07EA63F4CCB2E13CD3A /* Pods-Space-X.debug(development).xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1180,11 +1218,11 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Debug;
+			name = "Debug(Development)";
 		};
-		11794CAA26538F1D00B99377 /* Release */ = {
+		11794CAA26538F1D00B99377 /* Debug(Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E854A4B116E362E326CE3D9F /* Pods-Space-X.release.xcconfig */;
+			baseConfigurationReference = 51C10C47FD0153DDDB105C6D /* Pods-Space-X.debug(production).xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1201,58 +1239,65 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Release;
+			name = "Debug(Production)";
 		};
-		11794CAC26538F1D00B99377 /* Debug */ = {
+		11794CAC26538F1D00B99377 /* Debug(Development) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64ACD94179BC023CF1133CF0 /* Pods-Space-XTests.debug.xcconfig */;
+			baseConfigurationReference = 2DB3AB84320356B30009CE8F /* Pods-Space-XTests.debug(development).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
 				INFOPLIST_FILE = "Space-XTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-XTests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space-X.app/Space-X";
 			};
-			name = Debug;
+			name = "Debug(Development)";
 		};
-		11794CAD26538F1D00B99377 /* Release */ = {
+		11794CAD26538F1D00B99377 /* Debug(Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFB81887F3B934F186585FCE /* Pods-Space-XTests.release.xcconfig */;
+			baseConfigurationReference = 4B8535CF6B0358D3F89DE724 /* Pods-Space-XTests.debug(production).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
 				INFOPLIST_FILE = "Space-XTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-XTests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space-X.app/Space-X";
 			};
-			name = Release;
+			name = "Debug(Production)";
 		};
-		11794CAF26538F1D00B99377 /* Debug */ = {
+		11794CAF26538F1D00B99377 /* Debug(Development) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F945F7466E44EA1717A55AF /* Pods-Space-X-Space-XUITests.debug.xcconfig */;
+			baseConfigurationReference = 3E9450C3E396ACCC828ECC83 /* Pods-Space-X-Space-XUITests.debug(development).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
 				INFOPLIST_FILE = "Space-XUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1260,19 +1305,21 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-XUITests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Space-X";
 			};
-			name = Debug;
+			name = "Debug(Development)";
 		};
-		11794CB026538F1D00B99377 /* Release */ = {
+		11794CB026538F1D00B99377 /* Debug(Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F28A71A0864CA45DCD581F6D /* Pods-Space-X-Space-XUITests.release.xcconfig */;
+			baseConfigurationReference = A65493E93AF9F37778F37F0B /* Pods-Space-X-Space-XUITests.debug(production).xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
 				INFOPLIST_FILE = "Space-XUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1280,12 +1327,527 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-XUITests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Space-X";
 			};
-			name = Release;
+			name = "Debug(Production)";
+		};
+		11CA647D26564CD4006E1B4D /* Release(Development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11794CCA2653916600B99377 /* Config-Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Release(Development)";
+		};
+		11CA647E26564CD4006E1B4D /* Release(Development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29242142FAC5075CA968E205 /* Pods-Space-X.release(development).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
+				INFOPLIST_FILE = "Space-X/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-X";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release(Development)";
+		};
+		11CA647F26564CD4006E1B4D /* Release(Development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56BA3FFB441F240424466C36 /* Pods-Space-XTests.release(development).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
+				INFOPLIST_FILE = "Space-XTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-XTests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space-X.app/Space-X";
+			};
+			name = "Release(Development)";
+		};
+		11CA648026564CD4006E1B4D /* Release(Development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C79BEB1BC3CD7A816E5FCD2 /* Pods-Space-X-Space-XUITests.release(development).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
+				INFOPLIST_FILE = "Space-XUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-XUITests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Space-X";
+			};
+			name = "Release(Development)";
+		};
+		11CA648126564CE5006E1B4D /* Release(Production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11794CCC2653918300B99377 /* Config-Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release(Production)";
+		};
+		11CA648226564CE5006E1B4D /* Release(Production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD35DE0576742DBADF31A322 /* Pods-Space-X.release(production).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
+				INFOPLIST_FILE = "Space-X/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-X";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release(Production)";
+		};
+		11CA648326564CE5006E1B4D /* Release(Production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E30DA2D767427AFECFA3D20E /* Pods-Space-XTests.release(production).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
+				INFOPLIST_FILE = "Space-XTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-XTests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space-X.app/Space-X";
+			};
+			name = "Release(Production)";
+		};
+		11CA648426564CE5006E1B4D /* Release(Production) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F538094E44EF3FC70EE7F15B /* Pods-Space-X-Space-XUITests.release(production).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
+				INFOPLIST_FILE = "Space-XUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-XUITests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Space-X";
+			};
+			name = "Release(Production)";
+		};
+		11CA648526564CFC006E1B4D /* Release(Stage) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11794CCB2653917500B99377 /* Config-Stage.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Release(Stage)";
+		};
+		11CA648626564CFC006E1B4D /* Release(Stage) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD7E35EEB865B566F24DD6EF /* Pods-Space-X.release(stage).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
+				INFOPLIST_FILE = "Space-X/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-X";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release(Stage)";
+		};
+		11CA648726564CFC006E1B4D /* Release(Stage) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7D2A97548C22BEF97E104E3 /* Pods-Space-XTests.release(stage).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
+				INFOPLIST_FILE = "Space-XTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-XTests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space-X.app/Space-X";
+			};
+			name = "Release(Stage)";
+		};
+		11CA648826564CFC006E1B4D /* Release(Stage) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7956C81BE65AB967BF11C61E /* Pods-Space-X-Space-XUITests.release(stage).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
+				INFOPLIST_FILE = "Space-XUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-XUITests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Space-X";
+			};
+			name = "Release(Stage)";
+		};
+		11CA648926564CFE006E1B4D /* Debug(Stage) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11794CCB2653917500B99377 /* Config-Stage.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug(Stage)";
+		};
+		11CA648A26564CFE006E1B4D /* Debug(Stage) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51D5CF45106FB54B8C1A8F56 /* Pods-Space-X.debug(stage).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
+				INFOPLIST_FILE = "Space-X/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-X";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug(Stage)";
+		};
+		11CA648B26564CFE006E1B4D /* Debug(Stage) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A7BDAD1C3A7DFE886EDF67E /* Pods-Space-XTests.debug(stage).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
+				INFOPLIST_FILE = "Space-XTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-XTests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space-X.app/Space-X";
+			};
+			name = "Debug(Stage)";
+		};
+		11CA648C26564CFE006E1B4D /* Debug(Stage) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3718DDFE99696C59345CF863 /* Pods-Space-X-Space-XUITests.debug(stage).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN2PG7K999;
+				INFOPLIST_FILE = "Space-XUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SDT.SpaceX.Space-XUITests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Space-X";
+			};
+			name = "Debug(Stage)";
 		};
 /* End XCBuildConfiguration section */
 
@@ -1293,38 +1855,54 @@
 		11794C7926538F1B00B99377 /* Build configuration list for PBXProject "Space-X" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11794CA626538F1D00B99377 /* Debug */,
-				11794CA726538F1D00B99377 /* Release */,
+				11794CA626538F1D00B99377 /* Debug(Development) */,
+				11CA648926564CFE006E1B4D /* Debug(Stage) */,
+				11CA648526564CFC006E1B4D /* Release(Stage) */,
+				11CA647D26564CD4006E1B4D /* Release(Development) */,
+				11794CA726538F1D00B99377 /* Debug(Production) */,
+				11CA648126564CE5006E1B4D /* Release(Production) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release(Development)";
 		};
 		11794CA826538F1D00B99377 /* Build configuration list for PBXNativeTarget "Space-X" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11794CA926538F1D00B99377 /* Debug */,
-				11794CAA26538F1D00B99377 /* Release */,
+				11794CA926538F1D00B99377 /* Debug(Development) */,
+				11CA648A26564CFE006E1B4D /* Debug(Stage) */,
+				11CA648626564CFC006E1B4D /* Release(Stage) */,
+				11CA647E26564CD4006E1B4D /* Release(Development) */,
+				11794CAA26538F1D00B99377 /* Debug(Production) */,
+				11CA648226564CE5006E1B4D /* Release(Production) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release(Development)";
 		};
 		11794CAB26538F1D00B99377 /* Build configuration list for PBXNativeTarget "Space-XTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11794CAC26538F1D00B99377 /* Debug */,
-				11794CAD26538F1D00B99377 /* Release */,
+				11794CAC26538F1D00B99377 /* Debug(Development) */,
+				11CA648B26564CFE006E1B4D /* Debug(Stage) */,
+				11CA648726564CFC006E1B4D /* Release(Stage) */,
+				11CA647F26564CD4006E1B4D /* Release(Development) */,
+				11794CAD26538F1D00B99377 /* Debug(Production) */,
+				11CA648326564CE5006E1B4D /* Release(Production) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release(Development)";
 		};
 		11794CAE26538F1D00B99377 /* Build configuration list for PBXNativeTarget "Space-XUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11794CAF26538F1D00B99377 /* Debug */,
-				11794CB026538F1D00B99377 /* Release */,
+				11794CAF26538F1D00B99377 /* Debug(Development) */,
+				11CA648C26564CFE006E1B4D /* Debug(Stage) */,
+				11CA648826564CFC006E1B4D /* Release(Stage) */,
+				11CA648026564CD4006E1B4D /* Release(Development) */,
+				11794CB026538F1D00B99377 /* Debug(Production) */,
+				11CA648426564CE5006E1B4D /* Release(Production) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release(Development)";
 		};
 /* End XCConfigurationList section */
 	};
