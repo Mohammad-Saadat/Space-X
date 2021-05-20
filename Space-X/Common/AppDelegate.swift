@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //    lazy var webSocketManager: WebSocketManager = WebSocketManager(userManager: userManager)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let frame = UIScreen.main.bounds
+        self.window = UIWindow(frame: frame)
+        self.window?.rootViewController = setHomeViewcontroller()
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -26,6 +31,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 // ===============
 extension AppDelegate {
     class func getInstance() -> AppDelegate {
-        return UIApplication.shared.delegate as! AppDelegate // swiftlint:disable:this force_cast
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
+    func setHomeViewcontroller() -> UIViewController {
+        let dc = HomeDependencyContainer()
+        let homeVC = dc.makeHomeViewController()
+        let navVc = CustomNavigationController(rootViewController: homeVC)
+        return navVc
     }
 }
