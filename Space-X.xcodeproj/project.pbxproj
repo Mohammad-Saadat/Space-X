@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111F376A2656626B00413017 /* DetailFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F375E2656626B00413017 /* DetailFactory.swift */; };
+		111F376B2656626B00413017 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F375F2656626B00413017 /* DetailPresenter.swift */; };
+		111F376C2656626B00413017 /* DetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F37602656626B00413017 /* DetailWorker.swift */; };
+		111F376D2656626B00413017 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F37612656626B00413017 /* DetailRouter.swift */; };
+		111F376E2656626B00413017 /* DetailEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F37622656626B00413017 /* DetailEndpoint.swift */; };
+		111F376F2656626B00413017 /* DetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F37632656626B00413017 /* DetailModels.swift */; };
+		111F37702656626B00413017 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F37642656626B00413017 /* DetailViewController.swift */; };
+		111F37712656626B00413017 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F37652656626B00413017 /* DetailInteractor.swift */; };
+		111F37722656626B00413017 /* DetailLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F37662656626B00413017 /* DetailLogger.swift */; };
+		111F37732656626B00413017 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111F37672656626B00413017 /* DetailViewController.xib */; };
+		111F37742656626B00413017 /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F37682656626B00413017 /* DetailService.swift */; };
+		111F37752656626B00413017 /* DetailDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F37692656626B00413017 /* DetailDependencyContainer.swift */; };
 		1120FB4B2653935800147F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1120FB4A2653935800147F41 /* Assets.xcassets */; };
 		1135B7F0265393F7009ED1D3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1135B7EF265393F7009ED1D3 /* Colors.xcassets */; };
 		116231232653EA2A009D91DF /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116231172653EA2A009D91DF /* HomeRouter.swift */; };
@@ -112,6 +124,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		111F375E2656626B00413017 /* DetailFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFactory.swift; sourceTree = "<group>"; };
+		111F375F2656626B00413017 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		111F37602656626B00413017 /* DetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWorker.swift; sourceTree = "<group>"; };
+		111F37612656626B00413017 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		111F37622656626B00413017 /* DetailEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEndpoint.swift; sourceTree = "<group>"; };
+		111F37632656626B00413017 /* DetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModels.swift; sourceTree = "<group>"; };
+		111F37642656626B00413017 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		111F37652656626B00413017 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		111F37662656626B00413017 /* DetailLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLogger.swift; sourceTree = "<group>"; };
+		111F37672656626B00413017 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		111F37682656626B00413017 /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
+		111F37692656626B00413017 /* DetailDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDependencyContainer.swift; sourceTree = "<group>"; };
 		1120FB4A2653935800147F41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1135B7EF265393F7009ED1D3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		116231172653EA2A009D91DF /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
@@ -260,6 +284,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		111F375D2656623600413017 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				111F37652656626B00413017 /* DetailInteractor.swift */,
+				111F37662656626B00413017 /* DetailLogger.swift */,
+				111F37632656626B00413017 /* DetailModels.swift */,
+				111F375F2656626B00413017 /* DetailPresenter.swift */,
+				111F37612656626B00413017 /* DetailRouter.swift */,
+				111F377E2656628300413017 /* DependencyContainer */,
+				111F377D2656627600413017 /* Service */,
+				111F37792656627000413017 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		111F37792656627000413017 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				111F37642656626B00413017 /* DetailViewController.swift */,
+				111F37672656626B00413017 /* DetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		111F377D2656627600413017 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				111F37602656626B00413017 /* DetailWorker.swift */,
+				111F37622656626B00413017 /* DetailEndpoint.swift */,
+				111F37682656626B00413017 /* DetailService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		111F377E2656628300413017 /* DependencyContainer */ = {
+			isa = PBXGroup;
+			children = (
+				111F375E2656626B00413017 /* DetailFactory.swift */,
+				111F37692656626B00413017 /* DetailDependencyContainer.swift */,
+			);
+			path = DependencyContainer;
+			sourceTree = "<group>";
+		};
 		116231162653EA1D009D91DF /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +412,7 @@
 		11794CB826538F5D00B99377 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				111F375D2656623600413017 /* Detail */,
 				116231162653EA1D009D91DF /* Home */,
 			);
 			path = Modules;
@@ -831,6 +899,7 @@
 				1180586D2653A64A00BF4784 /* EmptyListView.xib in Resources */,
 				11794C8E26538F1C00B99377 /* LaunchScreen.storyboard in Resources */,
 				1135B7F0265393F7009ED1D3 /* Colors.xcassets in Resources */,
+				111F37732656626B00413017 /* DetailViewController.xib in Resources */,
 				118058BC2653A8AD00BF4784 /* ForceUpdateViewController.xib in Resources */,
 				1120FB4B2653935800147F41 /* Assets.xcassets in Resources */,
 				11CA646E26563EB3006E1B4D /* ItemTableViewCell.xib in Resources */,
@@ -965,23 +1034,29 @@
 				118057F42653983300BF4784 /* NibLoadableView.swift in Sources */,
 				118058C12653A8AD00BF4784 /* GeneralErrors.swift in Sources */,
 				118058C82653A8AE00BF4784 /* Connectivity.swift in Sources */,
+				111F376A2656626B00413017 /* DetailFactory.swift in Sources */,
 				1162312A2653EA2A009D91DF /* HomePresenter.swift in Sources */,
 				1188912B2653F7D500F5BCA0 /* ViewStateManager.swift in Sources */,
 				118058CD2653A8AE00BF4784 /* GeneralErrorHandlerPlugin.swift in Sources */,
+				111F37702656626B00413017 /* DetailViewController.swift in Sources */,
 				118058582653A5F100BF4784 /* TableView.swift in Sources */,
+				111F376B2656626B00413017 /* DetailPresenter.swift in Sources */,
 				118059032653B96200BF4784 /* RTAChangeRootSegue.swift in Sources */,
 				118058BD2653A8AD00BF4784 /* ForceUpdateViewController.swift in Sources */,
 				118058EE2653ACF600BF4784 /* CustomNavigationController.swift in Sources */,
+				111F376D2656626B00413017 /* DetailRouter.swift in Sources */,
 				118058CC2653A8AE00BF4784 /* NetworkLoggerPlugin.swift in Sources */,
 				118058CE2653A8AE00BF4784 /* CustomUrlEncoding.swift in Sources */,
 				11EB6F642655968D005FD2D7 /* LaunchPage.swift in Sources */,
 				118058312653A34300BF4784 /* UIImageViewExtension.swift in Sources */,
 				116231272653EA2A009D91DF /* HomeEndpoint.swift in Sources */,
 				118057F92653986800BF4784 /* UIViewControllerExtention.swift in Sources */,
+				111F37722656626B00413017 /* DetailLogger.swift in Sources */,
 				118058892653A7D400BF4784 /* NetworkStateNotifier.swift in Sources */,
 				118058CA2653A8AE00BF4784 /* NetworkActivityPlugin.swift in Sources */,
 				118059462653BD2A00BF4784 /* DependencyContainer.swift in Sources */,
 				118057EA2653981000BF4784 /* JSONDecoderExtension.swift in Sources */,
+				111F376E2656626B00413017 /* DetailEndpoint.swift in Sources */,
 				118058CB2653A8AE00BF4784 /* AppInfoPlugin.swift in Sources */,
 				118058E32653AC2A00BF4784 /* WindowManager.swift in Sources */,
 				118059012653B96200BF4784 /* RTAChangeRootTransitionStyle.swift in Sources */,
@@ -994,12 +1069,14 @@
 				116231282653EA2A009D91DF /* HomeDependencyContainer.swift in Sources */,
 				1180588E2653A7E300BF4784 /* NetworkNotifierProtocol.swift in Sources */,
 				1162312D2653EA2A009D91DF /* HomeLogger.swift in Sources */,
+				111F376C2656626B00413017 /* DetailWorker.swift in Sources */,
 				1180591B2653BB4900BF4784 /* InfoDictionary.swift in Sources */,
 				118058C72653A8AD00BF4784 /* TokenProvider.swift in Sources */,
 				118058842653A7C400BF4784 /* NetStatus.swift in Sources */,
 				118058532653A5E100BF4784 /* SectionViewModel.swift in Sources */,
 				118058482653A4CD00BF4784 /* CALayerExtension.swift in Sources */,
 				118059412653BD1200BF4784 /* Logger.swift in Sources */,
+				111F37742656626B00413017 /* DetailService.swift in Sources */,
 				118058D82653AAE500BF4784 /* BackendError.swift in Sources */,
 				118058DD2653AB7300BF4784 /* DataExtension.swift in Sources */,
 				118058E82653AC7500BF4784 /* StringExtention.swift in Sources */,
@@ -1013,14 +1090,17 @@
 				1162312B2653EA2A009D91DF /* HomeService.swift in Sources */,
 				118058FF2653B96200BF4784 /* UIWindow+ChangeRoot.swift in Sources */,
 				1162312E2653EA2A009D91DF /* HomeInteractor.swift in Sources */,
+				111F37712656626B00413017 /* DetailInteractor.swift in Sources */,
 				1180585D2653A60600BF4784 /* TableViewDataSource.swift in Sources */,
 				118058C52653A8AD00BF4784 /* NetworkManager.swift in Sources */,
 				118058C22653A8AD00BF4784 /* NetworkErrors.swift in Sources */,
+				111F37752656626B00413017 /* DetailDependencyContainer.swift in Sources */,
 				118058722653A6A700BF4784 /* UIColorExtention.swift in Sources */,
 				11794C8226538F1B00B99377 /* AppDelegate.swift in Sources */,
 				116231252653EA2A009D91DF /* HomeFactory.swift in Sources */,
 				116231262653EA2A009D91DF /* HomeModels.swift in Sources */,
 				118058BE2653A8AD00BF4784 /* ForceUpdateErrorHandler.swift in Sources */,
+				111F376F2656626B00413017 /* DetailModels.swift in Sources */,
 				118058942653A82D00BF4784 /* SpaceXNetworkFactory.swift in Sources */,
 				118058432653A48A00BF4784 /* UIViewExtention.swift in Sources */,
 				118058BB2653A8AD00BF4784 /* ErrorHandlerProtocol.swift in Sources */,
