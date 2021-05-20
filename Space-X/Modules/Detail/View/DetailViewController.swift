@@ -8,7 +8,12 @@
 
 import UIKit
 
-protocol DetailDisplayLogic: class {}
+protocol DetailDisplayLogic: class {
+    func showLoading()
+    func hideLoading()
+    func displayError(viewModel: Detail.ErrorModel.ViewModel)
+    func displayData(viewModel: Detail.Info.ViewModel)
+}
 
 class DetailViewController: UIViewController {
     // MARK: - Object lifecycle
@@ -20,7 +25,7 @@ class DetailViewController: UIViewController {
     init(factory: DetailFactory) {
         super.init(nibName: DetailViewController.nibName, bundle: nil)
         self.factory = factory
-        setup()
+        factory.setup(viewController: self)
         DetailLogger.logInit(owner: String(describing: DetailViewController.self))
     }
     
@@ -39,6 +44,17 @@ class DetailViewController: UIViewController {
     var router: (NSObjectProtocol & DetailRoutingLogic & DetailDataPassing)?
     
     // MARK: - Outlets
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var detailsLabel: UILabel!
+    @IBOutlet private weak var launchDateLabel: UILabel!
+    @IBOutlet private weak var failuresLabel: UILabel!
+    @IBOutlet private weak var articleLabel: UILabel! {
+        didSet {
+            articleLabel.isUserInteractionEnabled = true
+            articleLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapOnArticleLabel)))
+        }
+    }
+    @IBOutlet private weak var patchImageView: UIImageView!
 }
 
 // MARK: - View Controller
@@ -48,7 +64,9 @@ extension DetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setup()
+        factory.setup(viewController: self)
+        title = "Detail"
+        interactor?.fetchLaunchInfo()
     }
 }
 
@@ -56,21 +74,10 @@ extension DetailViewController {
 
 // MARK: Private
 private extension DetailViewController {
-    // Setup
-    func setup() {
-        guard self.interactor == nil else { return }
-        let viewController = self
-        let interactor = DetailInteractor()
-        let presenter = DetailPresenter()
-        let router = DetailRouter()
-        let worker = DetailWorker(service: factory.makeDetailService())
-        viewController.interactor = interactor
-        viewController.router = router
-        interactor.presenter = presenter
-        interactor.worker = worker
-        presenter.viewController = viewController
-        router.viewController = viewController
-        router.dataStore = interactor
+    func setPathcImage(with stringUrl: String?) {
+        if let stringUrl = stringUrl, let url = URL(string: stringUrl) {
+            patchImageView.setImage(with: url)
+        }
     }
 }
 
@@ -78,14 +85,46 @@ private extension DetailViewController {
 extension DetailViewController {}
 
 // MARK: - Display Logic
-extension DetailViewController: DetailDisplayLogic {}
-
-// MARK: - Appearance
-extension DetailViewController: Appearance {
-    func setColor() {}
+extension DetailViewController: DetailDisplayLogic {
+    func showLoading() {
+        view.showLoading()
+    }
     
-    func setFont() {}
+    func hideLoading() {
+        view.hideLoading()
+    }
+    
+    func displayError(viewModel: Detail.ErrorModel.ViewModel) {
+        let action = UIAlertAction.init(title: "OK", style: .cancel, handler: nil)
+        presentMessege(title: "Error",
+                       message: viewModel.error.localizedDescription,
+                       additionalActions: action,
+                       preferredStyle: .alert) { [weak self] _ in
+            self?.interactor?.fetchLaunchInfo()
+            
+        }
+    }
+    
+    func displayData(viewModel: Detail.Info.ViewModel) {
+        nameLabel.text = viewModel.name
+        detailsLabel.text = viewModel.detail
+        failuresLabel.text = viewModel.failures
+        launchDateLabel.text = viewModel.launchDate
+        articleLabel.text = "Article about \(viewModel.name ?? "")"
+        setPathcImage(with: viewModel.rocketImage)
+    }
 }
 
 // MARK: - Actions
-extension DetailViewController {}
+extension DetailViewController {
+    @objc func tapOnArticleLabel(_ gestureRecognizer: UITapGestureRecognizer) {
+        guard let text = self.articleLabel.text else { return }
+        //
+        let hereRange = (text as NSString).range(of: text)
+        //
+        if gestureRecognizer.didTapAttributedTextInLabel(inRange: hereRange) {
+            guard let urlString = router?.dataStore?.articleLink,
+                  let url = URL(string: urlString) else { return }
+        }
+    }
+}
