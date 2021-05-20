@@ -15,11 +15,6 @@ target 'Space-X' do
   ##############
   pod 'Moya'
   pod 'PromiseKit'
-  
-  ######
-  # UI #
-  ######
-  pod 'UIScrollView-InfiniteScroll'
 
   # Pods for Space-X
 

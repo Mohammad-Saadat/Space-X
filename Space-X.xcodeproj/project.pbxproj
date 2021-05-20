@@ -19,6 +19,7 @@
 		111F37732656626B00413017 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111F37672656626B00413017 /* DetailViewController.xib */; };
 		111F37742656626B00413017 /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F37682656626B00413017 /* DetailService.swift */; };
 		111F37752656626B00413017 /* DetailDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F37692656626B00413017 /* DetailDependencyContainer.swift */; };
+		111F378326569C1300413017 /* UITapGestureRecognizerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F378226569C1300413017 /* UITapGestureRecognizerExtension.swift */; };
 		1120FB4B2653935800147F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1120FB4A2653935800147F41 /* Assets.xcassets */; };
 		1135B7F0265393F7009ED1D3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1135B7EF265393F7009ED1D3 /* Colors.xcassets */; };
 		116231232653EA2A009D91DF /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116231172653EA2A009D91DF /* HomeRouter.swift */; };
@@ -136,6 +137,7 @@
 		111F37672656626B00413017 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		111F37682656626B00413017 /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
 		111F37692656626B00413017 /* DetailDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDependencyContainer.swift; sourceTree = "<group>"; };
+		111F378226569C1300413017 /* UITapGestureRecognizerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizerExtension.swift; sourceTree = "<group>"; };
 		1120FB4A2653935800147F41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1135B7EF265393F7009ED1D3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		116231172653EA2A009D91DF /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
@@ -476,6 +478,7 @@
 				118058472653A4CD00BF4784 /* CALayerExtension.swift */,
 				1180584C2653A51B00BF4784 /* UIBezierPathExtension.swift */,
 				118058712653A6A700BF4784 /* UIColorExtention.swift */,
+				111F378226569C1300413017 /* UITapGestureRecognizerExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1098,6 +1101,7 @@
 				118058722653A6A700BF4784 /* UIColorExtention.swift in Sources */,
 				11794C8226538F1B00B99377 /* AppDelegate.swift in Sources */,
 				116231252653EA2A009D91DF /* HomeFactory.swift in Sources */,
+				111F378326569C1300413017 /* UITapGestureRecognizerExtension.swift in Sources */,
 				116231262653EA2A009D91DF /* HomeModels.swift in Sources */,
 				118058BE2653A8AD00BF4784 /* ForceUpdateErrorHandler.swift in Sources */,
 				111F376F2656626B00413017 /* DetailModels.swift in Sources */,
