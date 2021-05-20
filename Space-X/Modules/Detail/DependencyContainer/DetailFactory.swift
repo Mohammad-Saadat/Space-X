@@ -11,7 +11,8 @@ import Foundation
 typealias DetailFactory = DetailViewControllerFactory & DetailServiceFactory
 
 protocol DetailViewControllerFactory {
-    func makeDetailViewController() -> DetailViewController
+    func makeDetailViewController(launchId: String) -> DetailViewController
+    func setup(viewController: DetailViewController)
 }
 
 protocol DetailServiceFactory {

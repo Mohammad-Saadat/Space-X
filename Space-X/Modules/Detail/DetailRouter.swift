@@ -13,7 +13,7 @@ import UIKit
 }
 
 protocol DetailDataPassing {
-    var dataStore: DetailDataStore? { get }
+    var dataStore: DetailDataStore? { get set }
 }
 
 class DetailRouter: NSObject, DetailDataPassing {
