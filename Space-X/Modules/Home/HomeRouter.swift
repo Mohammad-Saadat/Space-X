@@ -8,8 +8,8 @@
 
 import UIKit
 
-@objc protocol HomeRoutingLogic {
-    //    func navigateToSomewhere()
+protocol HomeRoutingLogic {
+    func navigateToDetailViewController(launchId: String)
 }
 
 protocol HomeDataPassing {
@@ -45,4 +45,9 @@ extension HomeRouter {}
 // MARK: - Routin Logic
 extension HomeRouter: HomeRoutingLogic {
     // MARK: Navigation
+    func navigateToDetailViewController(launchId: String) {
+        let dc = DetailDependencyContainer()
+        let vc = dc.makeDetailViewController(launchId: launchId)
+        self.viewController?.navigationController?.pushViewController(vc, animated: true)
+    }
 }

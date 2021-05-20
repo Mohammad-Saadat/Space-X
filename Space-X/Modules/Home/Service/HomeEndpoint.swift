@@ -40,6 +40,6 @@ extension HomeEndpoint: RequestProtocol {
     }
     
     var authorizationType: AuthType {
-        return .bearer
+        return .none
     }
 }

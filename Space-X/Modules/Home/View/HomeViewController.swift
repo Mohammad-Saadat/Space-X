@@ -68,6 +68,10 @@ class HomeViewController: UIViewController {
     @IBOutlet private weak var tableView: DefaultTableView! {
         didSet {
             tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 85, right: 0)
+            tableView.didSelectTableView = { [weak self] (model, _) in
+                guard let model = model as? LaunchData else { return }
+                self?.router?.navigateToDetailViewController(launchId: model.id)
+            }
         }
     }
 }
@@ -80,8 +84,8 @@ extension HomeViewController {
         super.viewDidLoad()
         
         factory.setup(viewController: self)
-        self.title = "SpaceX rocket launches"
         interactor?.fetchData()
+        title = "SpaceX rocket launches"
     }
 }
 
