@@ -19,6 +19,7 @@ struct PageLaunch: Codable {
 
 // MARK: - Doc
 struct LaunchData: Codable {
+    let id: String
     let fairings: Fairings?
     let links: Links?
     let staticFireDateUTC: String?
@@ -37,23 +38,6 @@ struct LaunchData: Codable {
     let datePrecision: DatePrecision?
     let upcoming: Bool?
     let cores: [Core]?
-    let id: String?
-
-    enum CodingKeys: String, CodingKey {
-        case fairings, links
-        case staticFireDateUTC = "static_fire_date_utc"
-        case staticFireDateUnix = "static_fire_date_unix"
-        case tbd, net, window, success, details, ships, capsules, payloads
-        case autoUpdate = "auto_update"
-        case failures
-        case flightNumber = "flight_number"
-        case name
-        case dateUTC = "date_utc"
-        case dateUnix = "date_unix"
-        case dateLocal = "date_local"
-        case datePrecision = "date_precision"
-        case upcoming, cores, id
-    }
 }
 
 extension LaunchData: Equatable {}

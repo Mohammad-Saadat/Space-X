@@ -10,7 +10,7 @@ import Foundation
 public extension JSONEncoder {
     /// Default JSONEncoder
     func getInstance() -> JSONEncoder {
-        dateEncodingStrategy = .iso8601
+//        dateEncodingStrategy = .iso8601
         keyEncodingStrategy = .convertToSnakeCase
         return self
     }
