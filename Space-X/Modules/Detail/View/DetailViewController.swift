@@ -125,6 +125,7 @@ extension DetailViewController {
         if gestureRecognizer.didTapAttributedTextInLabel(inRange: hereRange) {
             guard let urlString = router?.dataStore?.articleLink,
                   let url = URL(string: urlString) else { return }
+            UIApplication.shared.open(url)
         }
     }
 }
