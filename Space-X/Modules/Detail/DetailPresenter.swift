@@ -9,7 +9,10 @@
 import UIKit
 
 protocol DetailPresentationLogic {
-    //    func presentSomething(response: Detail.Something.Response)
+    func presentError(response: Detail.ErrorModel.Response)
+    func showLoading()
+    func hideLoading()
+    func presentData(response: Detail.Info.Response)
 }
 
 class DetailPresenter {
@@ -38,4 +41,35 @@ private extension DetailPresenter {}
 extension DetailPresenter {}
 
 // MARK: - Presentation Logic
-extension DetailPresenter: DetailPresentationLogic {}
+extension DetailPresenter: DetailPresentationLogic {
+    func presentError(response: Detail.ErrorModel.Response) {
+        DispatchQueue.main.async {
+            self.viewController?.displayError(viewModel: .init(error: response.error))
+        }
+    }
+    
+    func showLoading() {
+        DispatchQueue.main.async {
+            self.viewController?.showLoading()
+        }
+    }
+    
+    func hideLoading() {
+        DispatchQueue.main.async {
+            self.viewController?.hideLoading()
+        }
+    }
+    
+    func presentData(response: Detail.Info.Response) {
+        let launchData = response.launchData
+        let launchDate = launchData.dateLocal?.toDate(withFormat: "yyyy-MM-dd'T'HH:mm:ssZ").toString(withFormat: "yyyy-MM-dd")
+        let viewModel = Detail.Info.ViewModel(name: launchData.name,
+                                              detail: launchData.details,
+                                              launchDate: "launch date: \(launchDate ?? "")",
+                                              failures: "number of failures: \(launchData.failures?.first?.time ?? 0) times",
+                                              rocketImage: launchData.links?.patch?.large)
+        DispatchQueue.main.async {
+            self.viewController?.displayData(viewModel: viewModel)
+        }
+    }
+}
