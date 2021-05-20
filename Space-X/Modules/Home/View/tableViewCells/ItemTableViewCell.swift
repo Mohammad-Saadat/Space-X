@@ -22,9 +22,9 @@ class ItemTableViewCell: UITableViewCell {
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var detailsLabel: UILabel!
     @IBOutlet private weak var launchDateLabel: UILabel!
-    @IBOutlet private weak var rocketImageView: UIImageView! {
+    @IBOutlet private weak var patchImageView: UIImageView! {
         didSet {
-            rocketImageView.circle()
+            patchImageView.circle()
         }
     }
 }
@@ -45,12 +45,12 @@ private extension ItemTableViewCell {
         if let launchDate = model.dateLocal?.toDate(withFormat: "yyyy-MM-dd'T'HH:mm:ssZ").toString(withFormat: "yyyy-MM-dd") {
             launchDateLabel.text = "launch date: \(launchDate)"
         }
-        setRocketImage(with: model.links?.patch?.small)
+        setPathcImage(with: model.links?.patch?.small)
     }
     
-    func setRocketImage(with stringUrl: String?) {
+    func setPathcImage(with stringUrl: String?) {
         if let stringUrl = stringUrl, let url = URL(string: stringUrl) {
-            rocketImageView.setImage(with: url)
+            patchImageView.setImage(with: url)
         }
     }
 }

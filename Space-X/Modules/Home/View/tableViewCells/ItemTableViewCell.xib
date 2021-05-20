@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,11 +12,11 @@
             <rect key="frame" x="0.0" y="0.0" width="369" height="107"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BAf-9R-wU4" id="qrX-yc-sp6">
-                <rect key="frame" x="0.0" y="0.0" width="338" height="107"/>
+                <rect key="frame" x="0.0" y="0.0" width="342" height="107"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Bn8-xJ-dn2">
-                        <rect key="frame" x="16" y="16" width="322" height="75"/>
+                        <rect key="frame" x="16" y="16" width="326" height="75"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cpu" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UhH-Dw-Mde">
                                 <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
@@ -29,22 +27,22 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="XVJ-2J-eAN">
-                                <rect key="frame" x="87" y="0.0" width="235" height="75"/>
+                                <rect key="frame" x="87" y="0.0" width="239" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Name label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bk3-9x-7ql">
-                                        <rect key="frame" x="0.0" y="0.0" width="235" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="239" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoT-Sq-OTO">
-                                        <rect key="frame" x="0.0" y="25.5" width="235" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="25.5" width="239" height="43.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6a-2S-rrz">
-                                        <rect key="frame" x="0.0" y="75" width="235" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="75" width="239" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -66,7 +64,7 @@
                 <outlet property="detailsLabel" destination="VoT-Sq-OTO" id="g6N-Ss-O9p"/>
                 <outlet property="launchDateLabel" destination="h6a-2S-rrz" id="HKu-c2-gjt"/>
                 <outlet property="nameLabel" destination="bk3-9x-7ql" id="vE4-92-hYI"/>
-                <outlet property="rocketImageView" destination="UhH-Dw-Mde" id="3BF-ry-43S"/>
+                <outlet property="patchImageView" destination="UhH-Dw-Mde" id="3BF-ry-43S"/>
             </connections>
             <point key="canvasLocation" x="180.43478260869566" y="173.10267857142856"/>
         </tableViewCell>
