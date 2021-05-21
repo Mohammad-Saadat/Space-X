@@ -101,7 +101,6 @@ extension DetailViewController: DetailDisplayLogic {
                        additionalActions: action,
                        preferredStyle: .alert) { [weak self] _ in
             self?.interactor?.fetchLaunchInfo()
-            
         }
     }
     
