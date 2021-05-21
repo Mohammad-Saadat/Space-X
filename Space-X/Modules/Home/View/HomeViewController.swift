@@ -47,14 +47,13 @@ class HomeViewController: UIViewController {
     // pull to refresh
     private lazy var pullToRefresh: UIRefreshControl = {
         let pullToRefresh = UIRefreshControl()
-        pullToRefresh.tintColor = .black
         pullToRefresh.addTarget(self, action: #selector(refreshPage), for: .valueChanged)
         tableView.alwaysBounceVertical = true
         tableView.refreshControl = pullToRefresh
         return pullToRefresh
     }()
     private lazy var footerActitvityIndicator: UIActivityIndicatorView = {
-        let spinner = UIActivityIndicatorView(style: .gray)
+        let spinner = UIActivityIndicatorView()
         spinner.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: self.tableView.bounds.width, height: CGFloat(85))
         spinner.startAnimating()
         spinner.hidesWhenStopped = true
@@ -66,7 +65,7 @@ class HomeViewController: UIViewController {
     var router: (NSObjectProtocol & HomeRoutingLogic & HomeDataPassing)?
     
     // MARK: - Outlets
-    @IBOutlet private weak var tableView: DefaultTableView! {
+    @IBOutlet weak var tableView: DefaultTableView! {
         didSet {
             tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 85, right: 0)
             tableView.didSelectTableView = { [weak self] (cellViewModel, _) in

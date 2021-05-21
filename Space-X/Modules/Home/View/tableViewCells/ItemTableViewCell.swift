@@ -19,10 +19,10 @@ class ItemTableViewCell: UITableViewCell {
     // ===============
     
     // MARK: Labels
-    @IBOutlet private weak var nameLabel: UILabel!
-    @IBOutlet private weak var detailsLabel: UILabel!
-    @IBOutlet private weak var launchDateLabel: UILabel!
-    @IBOutlet private weak var patchImageView: UIImageView! {
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var detailsLabel: UILabel!
+    @IBOutlet weak var launchDateLabel: UILabel!
+    @IBOutlet weak var patchImageView: UIImageView! {
         didSet {
             patchImageView.circle()
         }

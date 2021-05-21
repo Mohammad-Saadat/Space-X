@@ -48,7 +48,7 @@ extension HomePresenter {}
 // MARK: - Presentation Logic
 extension HomePresenter: HomePresentationLogic {
     func presentUpdate(response: Home.Update.Response) {
-        let viewModels = response.launchDatas.compactMap { ItemCellViewModel(launchData: $0) } ?? []
+        let viewModels = response.launchDatas.compactMap { ItemCellViewModel(launchData: $0) }
         let section = DefaultSection(cells: viewModels)
         DispatchQueue.main.async {
             self.viewController?.displayUpdateData(viewModel: .init(sections: [section],

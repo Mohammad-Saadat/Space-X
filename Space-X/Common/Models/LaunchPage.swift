@@ -38,6 +38,58 @@ struct LaunchData: Codable {
     let datePrecision: DatePrecision?
     let upcoming: Bool?
     let cores: [Core]?
+    
+    init(id: String) {
+        self.id = id
+        fairings = nil
+        links = nil
+        staticFireDateUTC = nil
+        staticFireDateUnix = nil
+        tbd = nil
+        net = nil
+        window = nil
+        success = nil
+        details = nil
+        ships = nil
+        capsules = nil
+        payloads = nil
+        autoUpdate = nil
+        failures = nil
+        flightNumber = nil
+        name = nil
+        dateUTC = nil
+        dateUnix = nil
+        dateLocal = nil
+        datePrecision = nil
+        upcoming = nil
+        cores = nil
+    }
+    
+    init(id: String, name: String, localDate: String) {
+        self.id = id
+        fairings = nil
+        links = nil
+        staticFireDateUTC = nil
+        staticFireDateUnix = nil
+        tbd = nil
+        net = nil
+        window = nil
+        success = nil
+        details = nil
+        ships = nil
+        capsules = nil
+        payloads = nil
+        autoUpdate = nil
+        failures = nil
+        flightNumber = nil
+        self.name = name
+        dateUTC = nil
+        dateUnix = nil
+        self.dateLocal = localDate
+        datePrecision = nil
+        upcoming = nil
+        cores = nil
+    }
 }
 
 extension LaunchData: Equatable {}
@@ -47,7 +99,7 @@ struct Core: Codable {
     let core: String?
     let flight: Int?
     let gridfins, legs, reused, landingAttempt: Bool?
-
+    
     enum CodingKeys: String, CodingKey {
         case core, flight, gridfins, legs, reused
         case landingAttempt = "landing_attempt"
@@ -74,7 +126,7 @@ extension Failure: Equatable {}
 // MARK: - Fairings
 struct Fairings: Codable {
     let reused, recoveryAttempt, recovered: Bool?
-
+    
     enum CodingKeys: String, CodingKey {
         case reused
         case recoveryAttempt = "recovery_attempt"
@@ -93,7 +145,7 @@ struct Links: Codable {
     let youtubeID: String?
     let article: String?
     let wikipedia: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case patch, reddit, presskit, webcast
         case youtubeID = "youtube_id"
