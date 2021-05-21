@@ -21,6 +21,9 @@ target 'Space-X' do
   target 'Space-XTests' do
     inherit! :search_paths
     # Pods for testing
+    
+    pod 'PromiseKit'
+    
   end
 
   target 'Space-XUITests' do

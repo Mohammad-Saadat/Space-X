@@ -5,8 +5,8 @@
 //  Created by mohammadSaadat on 2/31/1400 AP.
 //
 
-@testable import Space_X
 import XCTest
+@testable import Space_X
 
 class HomeViewControllerTest: XCTestCase {
     
@@ -57,9 +57,13 @@ class HomeViewControllerTest: XCTestCase {
             fetchLaunchDataCalled = true
         }
         
-        func refreshPage() { }
+        func refreshPage() {
+            refreshPageCalled = true
+        }
         
-        func fetchNextPage() { }
+        func fetchNextPage() {
+            fetchNextPageCalled = true
+        }
         
         func startTimer() {
             startTimerCalled = true
@@ -81,7 +85,6 @@ class HomeViewControllerTest: XCTestCase {
     }
     
     // MARK: - Tests
-    
     func testShouldFetchLaunchDataWhenViewDidAppear() {
         // Given
         let homeInteractorTest = HomeInteractorTest()
