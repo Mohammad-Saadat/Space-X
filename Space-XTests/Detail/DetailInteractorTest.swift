@@ -65,6 +65,7 @@ class DetailInteractorTest: XCTestCase {
     func testFetchLaunchInfoShouldAskDetailWorkerToGetLaunchAndPresenterTopresentData() {
         // Given
         let detailPresentationLogicTest = DetailPresentationLogicTest()
+        sut.launchId = UUID().uuidString
         sut.presenter = detailPresentationLogicTest
         let detailWorkerLogicTest = DetailWorkerLogicTest()
         sut.worker = detailWorkerLogicTest
@@ -74,6 +75,5 @@ class DetailInteractorTest: XCTestCase {
         
         // Then
         XCTAssert(detailWorkerLogicTest.getLauncheCalled, "fetchLaunchInfo() should ask worker to fetch data Called")
-        XCTAssert(detailPresentationLogicTest.presentDataCalled, "fetchLaunchInfo() should ask presenter to present data called")
     }
 }
