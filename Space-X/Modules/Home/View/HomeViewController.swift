@@ -111,7 +111,9 @@ extension HomeViewController: HomeDisplayLogic {
         presentMessege(title: "Error",
                        message: viewModel.error.localizedDescription,
                        additionalActions: action,
-                       preferredStyle: .alert)
+                       preferredStyle: .alert) { [weak self] _ in
+            self?.interactor?.fetchNextPage()
+        }
     }
     
     func displayData(viewModel: Home.Item.ViewModel) {
