@@ -44,11 +44,11 @@ class DetailViewController: UIViewController {
     var router: (NSObjectProtocol & DetailRoutingLogic & DetailDataPassing)?
     
     // MARK: - Outlets
-    @IBOutlet private weak var nameLabel: UILabel!
-    @IBOutlet private weak var detailsLabel: UILabel!
-    @IBOutlet private weak var launchDateLabel: UILabel!
-    @IBOutlet private weak var failuresLabel: UILabel!
-    @IBOutlet private weak var articleLabel: UILabel! {
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var detailsLabel: UILabel!
+    @IBOutlet weak var launchDateLabel: UILabel!
+    @IBOutlet weak var failuresLabel: UILabel!
+    @IBOutlet weak var articleLabel: UILabel! {
         didSet {
             articleLabel.isUserInteractionEnabled = true
             articleLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapOnArticleLabel)))
