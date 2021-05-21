@@ -35,7 +35,15 @@ class DetailPresenter {
 // MARK: - Methods
 
 // MARK: Private
-private extension DetailPresenter {}
+private extension DetailPresenter {
+    func guaranteeMainThread(_ work: @escaping (() -> Void)) {
+        if Thread.isMainThread {
+            work()
+        } else {
+            DispatchQueue.main.async(execute: work)
+        }
+    }
+}
 
 // MARK: Public
 extension DetailPresenter {}
@@ -43,19 +51,19 @@ extension DetailPresenter {}
 // MARK: - Presentation Logic
 extension DetailPresenter: DetailPresentationLogic {
     func presentError(response: Detail.ErrorModel.Response) {
-        DispatchQueue.main.async {
+        guaranteeMainThread {
             self.viewController?.displayError(viewModel: .init(error: response.error))
         }
     }
     
     func showLoading() {
-        DispatchQueue.main.async {
+        guaranteeMainThread {
             self.viewController?.showLoading()
         }
     }
     
     func hideLoading() {
-        DispatchQueue.main.async {
+        guaranteeMainThread {
             self.viewController?.hideLoading()
         }
     }
@@ -68,7 +76,7 @@ extension DetailPresenter: DetailPresentationLogic {
                                               launchDate: "launch date: \(launchDate ?? "")",
                                               failures: "number of failures: \(launchData.failures?.first?.time ?? 0) times",
                                               rocketImage: launchData.links?.patch?.large)
-        DispatchQueue.main.async {
+        guaranteeMainThread {
             self.viewController?.displayData(viewModel: viewModel)
         }
     }

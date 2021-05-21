@@ -101,6 +101,7 @@
 		11B8BCE02657985F00692247 /* HomePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B8BCDF2657985F00692247 /* HomePresenterTest.swift */; };
 		11B8BCF32657A67C00692247 /* DetailViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B8BCF22657A67C00692247 /* DetailViewControllerTest.swift */; };
 		11B8BCFB2657A97E00692247 /* DetailInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B8BCFA2657A97E00692247 /* DetailInteractorTest.swift */; };
+		11B8BD002657AE2800692247 /* DetailPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B8BCFF2657AE2800692247 /* DetailPresenterTest.swift */; };
 		11CA646426563E17006E1B4D /* ItemCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA646326563E17006E1B4D /* ItemCellViewModel.swift */; };
 		11CA646926563E57006E1B4D /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA646826563E57006E1B4D /* ItemTableViewCell.swift */; };
 		11CA646E26563EB3006E1B4D /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11CA646D26563EB3006E1B4D /* ItemTableViewCell.xib */; };
@@ -233,6 +234,7 @@
 		11B8BCDF2657985F00692247 /* HomePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTest.swift; sourceTree = "<group>"; };
 		11B8BCF22657A67C00692247 /* DetailViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTest.swift; sourceTree = "<group>"; };
 		11B8BCFA2657A97E00692247 /* DetailInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractorTest.swift; sourceTree = "<group>"; };
+		11B8BCFF2657AE2800692247 /* DetailPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterTest.swift; sourceTree = "<group>"; };
 		11CA646326563E17006E1B4D /* ItemCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellViewModel.swift; sourceTree = "<group>"; };
 		11CA646826563E57006E1B4D /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		11CA646D26563EB3006E1B4D /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
@@ -758,6 +760,7 @@
 			children = (
 				11B8BCF22657A67C00692247 /* DetailViewControllerTest.swift */,
 				11B8BCFA2657A97E00692247 /* DetailInteractorTest.swift */,
+				11B8BCFF2657AE2800692247 /* DetailPresenterTest.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -1176,6 +1179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11794C9926538F1D00B99377 /* Space_XTests.swift in Sources */,
+				11B8BD002657AE2800692247 /* DetailPresenterTest.swift in Sources */,
 				11B8BCBA26577BF100692247 /* HomeViewControllerTest.swift in Sources */,
 				11B8BCF32657A67C00692247 /* DetailViewControllerTest.swift in Sources */,
 				11B8BCFB2657A97E00692247 /* DetailInteractorTest.swift in Sources */,
