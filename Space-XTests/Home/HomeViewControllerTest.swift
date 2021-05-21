@@ -41,7 +41,6 @@ class HomeViewControllerTest: XCTestCase {
     // MARK: - interactor
     class HomeInteractorTest: HomeBusinessLogic {
         
-        
         private var launchDatas = [LaunchData]()
         
         // MARK: Method call expectations
@@ -68,7 +67,6 @@ class HomeViewControllerTest: XCTestCase {
         func startTimer() {
             startTimerCalled = true
         }
-        
     }
     
     // MARK: - tableView

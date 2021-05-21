@@ -40,7 +40,15 @@ class HomePresenter {
 // MARK: - Methods
 
 // MARK: Private
-private extension HomePresenter {}
+private extension HomePresenter {
+    func guaranteeMainThread(_ work: @escaping (() -> Void)) {
+        if Thread.isMainThread {
+            work()
+        } else {
+            DispatchQueue.main.async(execute: work)
+        }
+    }
+}
 
 // MARK: Public
 extension HomePresenter {}
@@ -50,32 +58,32 @@ extension HomePresenter: HomePresentationLogic {
     func presentUpdate(response: Home.Update.Response) {
         let viewModels = response.launchDatas.compactMap { ItemCellViewModel(launchData: $0) }
         let section = DefaultSection(cells: viewModels)
-        DispatchQueue.main.async {
+        guaranteeMainThread {
             self.viewController?.displayUpdateData(viewModel: .init(sections: [section],
                                                                     indexpaths: response.indexpaths))
         }
     }
     
     func presentError(response: Home.ErrorModel.Response) {
-        DispatchQueue.main.async {
+        guaranteeMainThread {
             self.viewController?.displayError(viewModel: .init(error: response.error))
         }
     }
     
     func hidePullToRefresh() {
-        DispatchQueue.main.async {
+        guaranteeMainThread {
             self.viewController?.hidePullToRefresh()
         }
     }
     
     func showLoading() {
-        DispatchQueue.main.async {
+        guaranteeMainThread {
             self.viewController?.showLoading()
         }
     }
     
     func hideLoading() {
-        DispatchQueue.main.async {
+        guaranteeMainThread {
             self.viewController?.hideLoading()
         }
     }
@@ -83,26 +91,26 @@ extension HomePresenter: HomePresentationLogic {
     func presentData(response: Home.Item.Response) {
         let viewModels = response.launchDatas?.compactMap { ItemCellViewModel(launchData: $0) } ?? []
         let section = DefaultSection(cells: viewModels)
-        DispatchQueue.main.async {
+        guaranteeMainThread {
             self.viewController?.displayData(viewModel: .init(sections: [section]))
         }
     }
     
     func presentNextPage(response: Home.NextPage.Response) {
         let viewModels = response.launchDatas?.compactMap { ItemCellViewModel(launchData: $0) } ?? []
-        DispatchQueue.main.async {
+        guaranteeMainThread {
             self.viewController?.displayNextPage(viewModel: .init(cells: viewModels))
         }
     }
     
     func showPaginationLoading() {
-        DispatchQueue.main.async {
+        guaranteeMainThread {
             self.viewController?.showPaginationLoading()
         }
     }
     
     func hidePaginationLoading() {
-        DispatchQueue.main.async {
+        guaranteeMainThread {
             self.viewController?.hidePaginationLoading()
         }
     }
