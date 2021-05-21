@@ -74,6 +74,9 @@ class DetailInteractorTest: XCTestCase {
         sut.fetchLaunchInfo()
         
         // Then
-        XCTAssert(detailWorkerLogicTest.getLauncheCalled, "fetchLaunchInfo() should ask worker to fetch data Called")
+        DispatchQueue.main.async {
+            XCTAssert(detailWorkerLogicTest.getLauncheCalled, "fetchLaunchInfo() should ask worker to fetch data Called")
+            XCTAssert(detailPresentationLogicTest.presentDataCalled, "fetchLaunchInfo() should ask presenter to present data Called")
+        }
     }
 }

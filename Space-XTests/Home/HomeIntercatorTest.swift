@@ -98,8 +98,10 @@ class HomeIntercatorTest: XCTestCase {
         sut.fetchData()
         
         // Then
-        XCTAssert(homeWorkerLogicTest.fetchDataCalled, "fetchData() should ask worker to fetch data Called")
-        XCTAssert(homePresentationLogicTest.presentDataCalled, "fetchData() should ask presenter to present data called")
+        DispatchQueue.main.async {
+            XCTAssert(homeWorkerLogicTest.fetchDataCalled, "fetchData() should ask worker to fetch data Called")
+            XCTAssert(homePresentationLogicTest.presentDataCalled, "fetchData() should ask presenter to present data called")
+        }
     }
     
     func testRefreshPageShouldAskHomeWorkerToGetLaunchAndPresenterTopresentData() {
@@ -113,8 +115,10 @@ class HomeIntercatorTest: XCTestCase {
         sut.refreshPage()
         
         // Then
-        XCTAssert(homeWorkerLogicTest.fetchDataCalled, "refreshPage() should ask worker to get Launches Called")
-        XCTAssert(homePresentationLogicTest.presentDataCalled, "refreshPage() should ask presenter to present data called")
+        DispatchQueue.main.async {
+            XCTAssert(homeWorkerLogicTest.fetchDataCalled, "refreshPage() should ask worker to get Launches Called")
+            XCTAssert(homePresentationLogicTest.presentDataCalled, "refreshPage() should ask presenter to present data called")
+        }
     }
     
     func testFetchNextPageShouldAskHomeWorkerToGetLaunchAndPresenterTopresentData() {
@@ -128,7 +132,9 @@ class HomeIntercatorTest: XCTestCase {
         sut.fetchNextPage()
         
         // Then
-        XCTAssert(homeWorkerLogicTest.fetchDataCalled, "fetchNextPage() should ask worker to get Launches Called")
-        XCTAssert(homePresentationLogicTest.presentNextPageCalled, "fetchNextPage() should ask presenter to present Next Page called")
+        DispatchQueue.main.async {
+            XCTAssert(homeWorkerLogicTest.fetchDataCalled, "fetchNextPage() should ask worker to get Launches Called")
+            XCTAssert(homePresentationLogicTest.presentNextPageCalled, "fetchNextPage() should ask presenter to present Next Page called")
+        }
     }
 }
