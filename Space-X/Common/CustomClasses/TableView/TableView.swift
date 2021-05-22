@@ -43,7 +43,6 @@ class DefaultTableView: UITableView {
         = {
         
         EmptyListView.loadFromNib()
-        //        UIView.loadFromNib(named: "EmptyListView") as! EmptyListView
     }()
     var onDataSourceChanged: (() -> Void)?
 
@@ -52,14 +51,12 @@ class DefaultTableView: UITableView {
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setup()
     }
- 
-    private func setup() {
-        self.separatorColor = self.backgroundColor
-        self.backgroundColor = UIColor(colorName: .appWhite)
+    
+    override init(frame: CGRect, style: UITableView.Style) {
+        super.init(frame: frame, style: style)
     }
-
+    
     func displayData(_ dataSource: TableDataSource) {
         self.customDataSource = dataSource
         self.sections = customDataSource.sections
