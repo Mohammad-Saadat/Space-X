@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     lazy var networkManager = NetworkManagerFactory().createNetworkManager()
     lazy var networkStateNotifier = NetworkStateNotifier()
-//    lazy var webSocketManager: WebSocketManager = WebSocketManager(userManager: userManager)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
